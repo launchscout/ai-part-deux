@@ -39,15 +39,6 @@ github.com/superchris
 
 ---
 
-# Outcomes
-## WebAssembly Components
-- What and Why
-- Building and running
-- Use cases
-- Future
-
----
-
 # My own experience
 - It's scary
 - We've been rooting for it to fail
@@ -56,7 +47,56 @@ github.com/superchris
 
 ---
 
-# What's worked
+# Agenda
+- Where are we now?
+  - some odd things you might be seeing
+- What do?
+- What are the opportunities?
+- Where *might* we be headed?
+
+---
+
+# How did ~~we~~ I get here?
+- Very experienced developer
+- Hardcore AI skeptic Enthusiastic AI adopter
+
+---
+
+# You might be seeing this
+- Junior devs *loving* their AI coding tools
+- Senior devs telling you it's all garbage
+
+---
+
+# Junior devs
+- Can make more progress than ever before
+- Less memorization of obscure technical details
+- In some cases, may not know what they don't know
+- May not yet understand the *why* behind best practices
+
+---
+
+# Senior devs: Let's talk about the quiet part out loud
+- We've been rooting for AI to fail
+- It's scary!
+- It looks like everything we love about our career is ending
+  - No one will care about good code
+  - No one will care about good practices
+
+---
+
+# None of this is true!
+- Ok, maybe the scary part is
+- AI is not failing
+- Everything that makes us good at software development matters even more now!
+
+---
+
+# AI is a force multiplier
+- Everything we do it can help us do faster
+- We can build great software quickly!
+- **OR***
+- We can make a giant mess!
 
 ---
 
@@ -66,7 +106,7 @@ github.com/superchris
 
 ---
 
-# How do we get better?
+# How do **we** get better at writing code?
 
 ---
 
