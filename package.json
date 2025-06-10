@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "marp --html --output index.html index.md",
     "dev": "marp --html --watch --output index.html index.md",
+    "dev:ai": "marp --html --watch --output ai-coding-journey.html ai-coding-journey.md",
     "start": "live-server ."
   },
   "author": "",

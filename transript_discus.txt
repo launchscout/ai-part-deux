@@ -1,0 +1,803 @@
+2025-05-30 SuperChris Radio - AI Discussion.m4a
+Fri, May 30, 2025
+
+0:30 - Doug
+Okay, so let's take it from the top.
+
+0:34 - Doug
+Okay, what's the top?
+
+0:35 - Doug
+When was the first time that you ever used a AI-assisted coding helper?
+
+0:43 - Chris
+I'm almost sure it was GitHub Copilot and I had lunch with somebody who told me it was like two years ago because I had lunch lunch with this guy. And at that point he was like all in on GitHub copilot. And he was like, this is the future. I'm using it for everything. It's so great. And at the time my experience was like totally the opposite of that. I had tried it multiple times. Each time it would occasionally generate something great, which was just enough to pull me in and get me to start using it. And it like Lucy and Charlie Brown with the football. You know, I'd be like, okay, it's going to be great this time. And I'd run up to it and then it would just like start generating so much nonsense code that I'd spend more time reading the code than if I had just written it myself. And I was like, this AI thing is stupid. So we got together like really recently and he reminded me of that. And at the time he was like, yeah, man, I I just think Chris is wrong about this. And sure enough, two years later, he was right.
+
+1:59 - Doug
+I was wrong. Like no question. Who was that?
+
+2:02 - Chris
+Our friend Mike Ball.
+
+2:03 - Doug
+Oh, I know Mike Ball. You know Mike? Yeah. Yeah. So this is to put this in a day, this is like 22, 23? Yeah.
+
+2:11 - Chris
+I'd have to go back in my email and look. But I just had lunch with him recently. And so if it was two years ago, it would have been 22.
+
+2:22 - Doug
+Yeah.
+
+2:22 - Chris
+And so sometime in there. Yeah. Yeah.
+
+2:25 - Doug
+So that was kind of my own experience as well is that I was, of course I wasn't coding heavily, but my impression was that the, in fact, I said these words out loud, the amount of time it took to review the code that it wrote was more than the amount of time it would take me to write the code to begin with.
+
+2:50 - Unidentified Speaker
+Yeah.
+
+2:50 - Doug
+So like I was faster than using it to generate code and then PR review it.
+
+2:57 - Unidentified Speaker
+Okay, so that's 22-23 time frame.
+
+3:00 - Doug
+And we looked at it, Lucy and Charlie Brown, and then where does the story pick up from there?
+
+3:09 - Chris
+I mean, I think I'd try it every once in a while and still end up turning it back off because it was more annoying than helpful. And I think it was at the beginning of this year, 25, that Tim had some experience. I don't know when I first started hearing about Cursor, but Tim, Tim was the first one to convince me to actually give it a real try. Um, well, hang on a second.
+
+3:43 - Unidentified Speaker
+Yeah.
+
+3:43 - Doug
+We were like, before Christmas. The three of us were hanging out in the office like that week before Christmas break. Was it then? Okay. And that's when you like improv coded Paramount Landscaping. Okay. That was before Christmas. I got the time frame wrong.
+
+4:00 - Chris
+I thought that was the beginning of this year but you're telling me it was the end of last year.
+
+4:08 - Doug
+Yeah.
+
+4:08 - Doug
+Pretty close to the same but not quite.
+
+4:11 - Chris
+Yeah. Okay. That makes sense. But that was, that happened And after Tim was having reporting success with using Cursor for real work.
+
+4:23 - Doug
+All like October, November, December. Okay. He was on Beyond Will. Okay. And they were using it like crazy. Okay.
+
+4:34 - Chris
+So it's longer ago than that. So he convinced me to give it a try. I think even then my first attempt with it was like Yeah, it's just like I remember you had a couple false starts in there trying things Do you remember what you were doing at that time?
+
+4:58 - Doug
+That's different than what you did with paramount like the first big success story was paramount landscaping in my mind All right, you basically live coding this work order management system in a couple days.
+
+5:10 - Chris
+Okay, but I'm gonna go back a little bit because I remembered a thing that I tried. Before I got to Cursor, I think I tried something with AIDR. Really? Yeah, and AIDR is another AI tool that's fairly... It's open source.
+
+5:26 - Doug
+It's open source. It's command line terminal driven.
+
+5:29 - Chris
+Yeah, and it can both, you know, generate code but also like interact with the command line, so agent stuff.
+
+5:37 - Doug
+Yeah I will say that Calvin in his last name I can never remember but he's from six feet up. He loves Ader. He loves it more than Cursor. He did this whole like testing all these different tools and he's like I'd pick you Ader.
+
+5:55 - Chris
+Yeah yeah I watched some of that video.
+
+5:58 - Doug
+So you tried Ader.
+
+6:00 - Chris
+So I tried Ader and I think what I was doing was I was at this little sidebar to try to form like groups of people that wanna, groups of pilots that want to share an airplane that want to go on an airplane together. Never really got the thing all the way to production but I keep trying little experiments to do it. So this was one and I think what I was doing was I believe I was probably taking like a CSV file of airport information from the FAA and trying to bring it into a an elixir app. And as I recall, like, it did a pretty good job with that. Like I told it to do it. And it did a decent job. And then I think what happened was, I kept going with it. And at some point, it just started like doing worse and worse. It started just like making mistakes or making things too complicated. And after a It was like they couldn't figure out all the complicated mess that it had made Do you think that that's?
+
+7:09 - Doug
+Stop is there a piece there like about the context window that you know when the code base is green and fresh it can Make pretty good approximations, but the more complicated the code gets the harder it navigates it or what do you think happened?
+
+7:28 - Chris
+so what I Remember and it's been a little while and my memory as sketchy as we've already established. What I remember is when I tried Cursor again at Tim's prompting, no pun intended, the thing that I remember is like Cursor had just come out with this, they didn't call it Agent Mode, they called it something else. It was like Composer and Chat, they had these two different modes, And chat was just like generating code, but the composer could do stuff and then react to it And I think it was in composer Was the first time that I was able to get it to run tests See the test results and then go back and fix the code accordingly. Yeah, that's significant. That was the the most significant Advent that I can think of in my journey with the AI assisted coding.
+
+8:33 - Doug
+Okay, that's a great milestone Yeah, I do want to take that's literally like you know what?
+
+8:38 - Chris
+There's that scene in Terminator 2 when they like find the guy who invented Skynet And there's this like significantly the date when Skynet became self-aware The date when I saw cursor run the tests and fix the code that's like I should I should have written that down That's like, that should be in history somewhere.
+
+8:57 - Doug
+Yeah, I wonder if it's in your Git commit log somewhere. I don't know. You could back it up and figure it out. I don't know. I do want to dive into the Paramount Landscaping story and really get your, like, how did your mind shift when you started that project? Or like, well, the way that I tell this story is that Joe, who owns this landscaping company, has his own custom work order sheet. He called a white sheet. Right. And he was doing them by hand and everybody hated it. Like universally everyone at his company hated this, including himself, but he couldn't tear himself apart from it. And he's like, I want some software to do this. And he's like a million, $2 million business. It wasn't really big, but not big enough to like be in the custom software business.
+
+9:48 - Chris
+Right. Exactly. Not our target, typical target market, not big enough.
+
+9:53 - Doug
+Yeah. Spent two, three, four sessions of him coming into the office or calling him and talking to him, trying to talk him out of building custom software and saying, why don't you use this other tool that you already are paying for? Why don't you use Aspire, which we have some affiliation with? Why don't you use this? Why don't you use that? And we kept looking at all these different tools. And he was like, no, these tools just weren't quite right. They didn't work exactly the way that he wanted them to. They were either too complicated or not targeted enough. He wanted something simple that was right on point for what he had. And what I remember is at one point, this was about the time that Tim was like coming in, you know, waving his hands going, you won't believe what I've done on Beyond Will. And I've done these incredible things and this is amazing. And we just said, well, let's just try it.
+
+10:48 - Chris
+We got a copy PDF from Joe and you just started coding it yeah I think the original idea was what we used to do in our discovery process was like let's see if we could come up with you know just a prototype of what the app that you need would look like and it was usually like in figma mm-hmm am I not even be that much. It might even be just like user stories of what the app should do.
+
+11:22 - Doug
+But ideally, if we had enough time, we'd like have wireframes, right?
+
+11:27 - Chris
+Yeah. Yeah. Clickable prototype. Yeah. Yeah. And I think the idea, as I remember it on Paramount Landscaping, was like, what if instead of doing that, we like use cursor, this was before anybody had the word vibe coding, but this is essentially the idea. What if we could like just lean on AI to the greatest extent possible to actually come up with a full working app that we deployed somewhere. So that we could show it to Joe and go like, is this what you have in mind? And he could actually interact with it.
+
+12:04 - Doug
+We had scheduled a meeting and we said, can we get something running? And by we, I mean you. I was just encouraging you, I wasn't doing anything, but can we get something running that we can demo that actually works. Right, right.
+
+12:19 - Chris
+And I think we had somewhere like a really small number of, a really small amount of time that we wanted to use to try this out. I think it was a day or two, I don't know, 10 hours or something.
+
+12:34 - Doug
+Yeah, the way that I tell the story is that it was total, including the sales time, about 25 hours worth of conversations and coding. And you coded it I remember pretty distinctly it was over about two calendar days and you put about you know 12 16 hours maybe maybe a little bit more than that into the coding effort but it was really two calendar days yeah yeah and then this thing was pushed to fly to fly and went and showed him and they said that's great yeah yeah and it was yeah and he was really excited about it and he was excited about it how simple it was.
+
+13:14 - Chris
+And then, yeah, we started rolling from there.
+
+13:17 - Chris
+So let's zoom in on those two days. Yeah.
+
+13:21 - Doug
+What did you, because you were kind of just doing it on your own, and just sitting there trying to like play with things, and it was maybe your first real use of Cursor. And how did you, like, how did you shift your head? Did you do test-driven development? Like, how did you get cursor to actually write the code that you wanted?
+
+13:45 - Chris
+I definitely was having it write and run tests as it was building the code. I remember that I was definitely trying to get it to do test-driven development write the test first, but I think at some point I realized, well, it's not an actual, like, it's not going to benefit from tests and its design thinking process the way a human would, because it's not really, you know, that's not really... It's not informing the decision. It's not really informing the decisions that it makes. So it doesn't really matter whether the test is before the code or not, I don't think. But definitely, like, seeing it, it would consist you know, generate a first version of the code, it would be not right in some way. And it would generate the tests and run the tests and then it could use that process to give itself its own feedback to get the code to actually make the test pass. And then I could say things like, hey, this part of the code is terrible or way complicated or yeah I remember it it would do things like you know and this was like several models ago now right yeah this was like three five yeah and we've had two major model increase yeah it model releases since then I'm talking about Claude here yeah and at that time you know a lot of the code it would write as wasn't very good like it would do things like here right in the middle of this view in this HTML template I think I'll just like do a crazy amount of code, query the database directly, you know, do stuff that we would never do.
+
+15:39 - Doug
+Yeah. Yeah. In my own experience, I could tell it like, okay, don't do that.
+
+15:44 - Chris
+That's no good. I need you to move the code over here. And it could do that. It would make mistakes, but it could then run the tests and go like, Oh, I'm sorry. And then fix the mistake. Yeah. And that, that again, that's why that milestone was so important is like, it could self-correct.
+
+16:02 - Doug
+And to be clear, this was in Elixir and Phoenix? Yes. And LiveView? Yep. Yeah, so what I did some vibe coding with Elixir. What I found was that it wanted to write it more object-oriented like, more, it wanted to do like a lot of conditional logic and kind of traditional kind of stuff. And every time it would do something, I'd say, no, can't you do that with pattern matching? And it would say, oh, you're right. I can do this way. So it would write the code. And when you told it what you wanted, it would be like, oh, yeah, this is more idiomatic elixir to do it this way. I'll do it this way. But you constantly had to remind it what you were looking for. Oh, yeah. Yeah. Yeah.
+
+16:49 - Chris
+And at some point, I think even though they had cursor rules, and at some point I wrote a document for it about this is how to do test-driven development, and I'd refer to that document, and sometimes it would pay attention to that for a little while, and then eventually it would go off and decide it wanted to do something different. Like a person would. Like a young developer would be like, I know you said tests are a good idea, but I think I'm gonna do this.
+
+17:18 - Doug
+Yeah. I do think that in my own experience, really doing test first mattered to Cursor. Not that it was learning, you know, it was informing the design but getting the test right before Like part of the whole my whole experience of vibe coding is trying to get cursor to not get too far ahead Not get it to run away and just like vomit code into the editor And so like what are the techniques we can use to rein in how much code it generates and for me getting the test exactly, right and And, you know, explicitly prompting it, don't go write the code. We're just going to write the test. We're doing test driven development. I want to make sure the tests are exactly right before we do that. Then that gate established guardrails for when it starts vomiting code. It says it can be contained by the test. Don't ask for this. The tests don't tell you to do this. You're, you know, you're off your rocker. Skip back on the reservation type thing.
+
+18:21 - Unidentified Speaker
+Yeah. Yeah.
+
+18:22 - Doug
+So when you, we delivered Paramount then, and the follow-up to that was that we had a small contract that was a few hours a month that you just kind of go back with them, and they used that version in production while they modified it.
+
+18:38 - Chris
+Well, they're still, yeah, they're still looking at some things, but yeah, they're actively testing it.
+
+18:43 - Doug
+Are they using it day-to-day, like out in the field?
+
+18:46 - Doug
+They're not.
+
+18:47 - Chris
+What they decided to do was about the midway through the project, we had this giant snow storm in Cincinnati. And they were doing the same white sheets, but originally we started looking at these sheets of paper that they're using to track landscaping projects. But they're also using a different sheet of paper to track snow removal. And what happened is they had this huge storm, and it took them weeks to just type in these Sheets of paper into their excels giant Excel spreadsheet. They're using to track everything. Yeah, and And that became like very much top of mind And so actually we've been working on that because it's not snow season. We have this thing done But they're probably not gonna go to production with the snow removal until they have snow to remove again.
+
+19:40 - Doug
+Yeah, because it's me So the the lawn care stuff landscaping Work that continues to go on is is that in our people using it every day, or are they just like fiddling with it?
+
+19:52 - Chris
+They're they're not using it every day because yeah, we're not in the right season. Yeah, even for lawn care stuff I thought this would be busy season for a lot for landscaping and lawn care It would be but what they decided to do is like we want to finish all of snow removal and then worry about landscaping Oh interesting. So that's the decision they made for right? Or wrong. I don't know if it was the right or wrong decisions. But so at this point, I think we have snow removal kind of done. And I'm just actually just waiting for feedback on them.
+
+20:23 - Doug
+I probably need to pester them about that and say like, Hey, this is good. What do you want to do next?
+
+20:30 - Chris
+Okay, so that's been a continuous process of like every so often, I'll go back and, you know, lean on cursor to do a little bit more. So generally do a good job with very few specific things where I will always make a mess.
+
+20:44 - Doug
+And it just hangs on to something. It grabs us something and it won't let go of it.
+
+20:50 - Chris
+No. Yeah. But I'm actually thinking about like there are certain the thing I'm thinking about the most is like in live view. If you've ever done like a nested has many form where you're editing a thing and you also want to create a bunch of its Mm-hmm, and you haven't saved it yet. Like you're doing like that's a mess situation in a language it is but in live view, it's Particularly there's a way to do it, which is actually like You know Once you do it the code is like it it works really well, and that's not a lot of code But it's not in my opinion very intuitive And although that's my opinion What's interesting is that cursor will always make a mouse? Of it. Because if it's not intuitive to me as a human, it's also not intuitive to cursor. Um, so anytime I asked it to do one of those things, I know it's just going to be a train wreck. But what I did was if I did one myself first and I said, do it like this one over here, then it will be able to do it. Yeah. And essentially one shot it. So that taught me that like the two things that seem to be tests and examples tests and examples and honestly like I Am reading I love the idea of giving cursor a good documentation for it to read about how to do something in practice Matt I Mean, I'm still hoping for that to get better. It is with the models improving like it is actually So the concerts are for might be better at it, but undoubtedly exam pulls work better than documentation.
+
+22:34 - Doug
+So the concept that you're referring to is we've talked internally about doing like ADR driven AI, where ADR is... Architecture Decision Record, I think.
+
+22:44 - Chris
+Yes, Architecture Decision Record is an ADR.
+
+22:46 - Doug
+It's a specific format that Microsoft invented that says here's the thing that we're doing, and here's our policy, and here's why, and here's the other things that we considered, and here's the outcomes that that we expect to happen, and you put these documents in a folder somewhere, and that magically makes all your developers smarter. They don't have to revisit these things over and over again. We had the idea that we could help, nobody really wants to write these, because it feels like an exercise in busy work, but in a large organization, I can see why it might be valuable, but they're hard to write, they're not reviewed very often, there they are anyway it's hard to do but I think that there's a theme here of the things that we think might be a good idea to do that are tedious yeah are actually helpful for the AI and whether it's documentation whether it's you know so the idea was that if we had all the ADRs properly written and we could actually use AI to write the ADRs then we could use that as a framework for the AI bot to stay in the guardrails. And I think you're rightly saying that that's not good enough. It's too, it's a little too abstract and there's too much context. And if you like, here's this directory of a hundred files, it's like, I can't read and hold all those in context and write the code at the same time. So there, I think you're right that having specific examples to point to and having good test, which are also the things that make it good for a human to do work, is a better way to guide it. I think that there's a pattern here of saying, if we do the things that we've said are good to do, they're also good for the AI assistants.
+
+24:47 - Chris
+Yeah, that was the other thing that happened that was a real light bulb moment somewhere along the way, probably around it was yeah that the things we've always valued about like what are the practices that make us good developers like if I always think about that Kent Beck quote that you know I'd rather have like a good programmer with excellent habits and practices then you know the smartest developer in the world. That's not the exact quote, I'm butchering it, but it's the idea.
+
+25:27 - Doug
+The way that I think about that, as I've said before, and I know I didn't make it up, somebody else did, but if it's clever, throw it out. Maybe Jim Weirich made that up. If it's clever, throw it out. You want it to be simpler and that applies to the AI too, like what you're just talking about, this pattern in my view.
+
+25:47 - Chris
+Yeah, but the general thing that made me, I think, more excited about trying to embrace AI is like the The things that we value about doing software development well still matter. I think I came to AI thinking, well, if AI is going to write all the code, all of a sudden nothing matters anymore about good code because the AI is doing it, so who cares?
+
+26:16 - Doug
+If the code is that easy to write, if it works, who cares if it's good or not? And I've seen that argument before too. It didn't cost me anything to write this bad code. So if it's wrong, I'll just have AI rewrite it again and it'll be right the next time. And who cares if it's garbage from our point of view? How did you come to the conclusion that that was a fallacy?
+
+26:47 - Chris
+I think the first thing was seeing how much test-driven development made the AI better. The second thing was, I think, trying it with a different programming language and seeing how much it struggled. Elixir's not super mainstream at all, but it did quite a good job. Is similar to Ruby in that it puts a high value on code that is clear and concise. It really lends itself to writing code that's easy to read and understand. It also lends itself to being intuitive in the sense of you can say, hmm, I think it would work like this and write some code and it's probably gonna be right.
+
+27:39 - Doug
+Ruby's even maybe better at that. I think Ruby's better at that. Ruby is almost like writing pseudocode. I remember learning Ruby and thinking, I don't know how to write this, but if I did, I would write it like this, and then it would work.
+
+27:57 - Chris
+Elixir's not quite like that, but it can be. Yeah, I agree with that. Before we started using it with Elixir, Tim was using it with Ruby, and it was doing an amazing job. I actually saw a talk about this at RubyConf where the basic argument was like, hallucinations are a feature of AI.
+
+28:18 - Chris
+They're not a bug.
+
+28:20 - Chris
+And so it's going to make stuff up. What if we could build our systems such that like you can guess and make stuff up and be right more of the time. And guess what? Ruby is an amazing programming language for doing that because it kind of I really think Ruby may be the perfect language for AI programming. Yeah, it's hard for me to get behind this because I really like Elixir.
+
+28:50 - Doug
+I really like Elixir too.
+
+28:53 - Chris
+But I mean, I see what, like, there's a point there for sure.
+
+28:58 - Doug
+I think, one, the opus of object-oriented programming is much higher than the opus of functional programming that the LLMs are learning from Okay. And two, the language is, I think, tighter and more concise, and it's easier to make DSLs in Ruby.
+
+29:18 - Chris
+I think the language, Ruby, I think as a language, yeah, I think it's still the best at, I can easily express this problem in the minimum amount of like really frankly, beautiful, easy to read and understand code. I don't know that there's any other language that's as good as Ruby. But I want to say, I've seen enough Python that I'm still absolutely going to give the nod on that to Ruby. But I will say, I think the object-oriented versus functional is really important to think about. And the reason that I think functional has an edge is because of the context. So if you're looking at a functional language, if you all, if you're building a function, you know, the entire context because it's the parameters coming in and the value of being returned. And yeah, maybe you can go out and do side effect stuff, but it's not like an object where you can have like, things that like spider out infinitely. The object graph. The object graph. You don't have the object graph, which could be infinitely deep and affect your code in ways that you have to understand. Like in you're in the middle of a method and you could do something and it could like affect something six layers out on the object graph. Yeah. And that's like a tremendous amount of context. Especially if you don't design your object-oriented systems really, really, really well, which is really, really, really hard. And so that's why I think a functional language, I think for the same reason that I've seen brand new apprentices take to functional programming really, really well and come back and tell me if they started with Elixir and then had to do Ruby, It was a struggle boss because they're used to just like, okay, I know everything just from this function because, you know, a function is a function. Yeah.
+
+31:40 - Doug
+And functions call other functions. And so there's like a certain amount of like a call chain because the functions don't have side effects per se. The context is still more bounded than in a normal object graph programming language kind of thing. Yeah. You're right about that. That's a good point. So I want to go back and let's part of what I want us to do today is to survey the projects that you've worked on in with AI and how they're the same and how they're the different so that paramount landscaping you did was in like February March April and now we're at the end of May and so you've done I think a total of like maybe 55 60 hours on on this project which is a ridiculously small number of hours for what you've accomplished. What is the next project after you delivered the first like bit for Paramount that you did with AI Assisted Coding?
+
+32:38 - Chris
+It was A&P and they had been like Tim had been talking to them about what we were trying and doing and they said like hey we want in on this and they I we were talking about about experiments.
+
+32:56 - Doug
+We were going to some of our clients that trusted us, that we trusted them, and saying, we want to do AI experiments. We think we can develop code really fast. We want to see what we can accomplish for you in a bounded time frame.
+
+33:13 - Chris
+And A and P stepped up, I forgot. Yeah, yeah. And they came to us with a specific experiment identified, and it was also a spreadsheet they were using to track stuff that they wanted to replace with a web app. And there's so many of those out in the world, oh my gosh. I think it was two weeks. They identified a time box, a thing that they wanted to do. It was certainly more substantial than the early versions of Paramount, although Paramount's grown in complexity. That's a whole other story.
+
+33:53 - Doug
+Well, I think it was more complex than what we originally guessed like they told us we want to do this thing and Tim's like, yeah, we can do it in two weeks and then he saw the spreadsheet and he was like, whoa.
+
+34:09 - Chris
+Yeah. Yeah. So yeah, with that project, um, we did it with just me as the developer on for 80 hours, maybe even less, but two weeks. We also had a designer Katie Pullman on a halftime halftime. Yes and and we had this this spreadsheet and It was also like a well that there were software packages. It was a calibration system There were other off-the-shelf software practices that you could buy as a calibration system. They're pretty expensive blah blah They were doing essentially the equivalent of tracking the calibration of their equipment in a spreadsheet. And our goal was to build a calibration system to replace that spreadsheet and then some. So two weeks, how did you guys get started? We started with a story mapping session where we got together with the client, Dustin, me and Katie.
+
+35:10 - Doug
+And all three of you guys are with the story mapping process.
+
+35:17 - Chris
+Yeah. And so I remember we had like four hours of time set aside for it and we were done in two. It just wasn't that, it's just not that big of a system. And two hours was enough time for us to know what all the things were. I remember they identified like, here's, here's what I'd love to do in two weeks and here's some other stuff that I don't think we'll get to that would be really cool. Um, and so I think our first goal was like, we want to see something actually working and deployed in a day. I remember that was one of the, like one of the experiments, one of the like hypotheses is like, you could do that. Yeah.
+
+36:07 - Doug
+Tim has talked about doing a discovery session. Where we sit down and we talk through them with it and then we Five code up something that we pushed to push to a production instance the same day.
+
+36:23 - Chris
+Yeah. Yeah, and so I think Dustin couldn't get together again for a couple days. So it gave us like a little bit longer and then strictly You know a day, but it wasn't much more than eight hours and we had like several you know, that we implemented in Elixir live view and deployed to fly.
+
+36:45 - Doug
+So the discovery process that you guys did that was two hours, you described it as it was a story mapping but Dustin came with the spreadsheet already there. Yeah. Like to what degree did you actually write on Post-it notes and to what degree did Dustin explain the spreadsheet and Katie took notes or like what was that two hours and what made that two hours so effective?
+
+37:09 - Chris
+That two hours was showing the spreadsheet, asking lots of questions, Katie taking amazing notes on post-it notes as you described, and then following up with capturing that all in Favreau.
+
+37:24 - Doug
+So took those post-it, Katie took, let me talk more clearly, Katie took notes on post-it notes in kind of a story map kind of fashion.
+
+37:36 - Chris
+Converted those into cards and Favreau are yeah, and I don't think she did the Favreau Like she did that after we'd gotten together. So we came away out of that with our typical like here's a bunch of post-it notes And so then Walk away from that you have a copy of the spreadsheet.
+
+37:57 - Doug
+You have all these notes Katie trans transcribes those into Favreau Katie starts drawing wireframes.
+
+38:03 - Chris
+I'm guessing kind of her motive yeah but I think I had to like build I was often working ahead of her because I could crank up the screens really really fast with with cursor and even just sometimes just a lot of it was crud screen so I could just use the Phoenix live you scaffolding yeah to start with so I did a lot of that I had a lot of working screens in place before she had a chance to even do any wireframing or design so She was doing a lot of like Yeah, and I remember this was kind of stressful. She did a lot of like here's a bunch of screens deployed to fly. Let's like Make him not be so terrible And I think she did a lot of that.
+
+38:54 - Doug
+What was that process like,
+
+38:55 - Chris
+She so I know a lot of it was like she was also She was also trying out Cursor for the first time. And she wasn't like, she had not done a lot of Tailwind, and Phoenix is like all about Tailwind these days. And so she was doing a lot of like working with Cursor to say like, here's what I want to do, and I don't know how to do it in Tailwind, please help. And it was doing a lot of like the markup and CSS generation for her and and the other thing that we did I think it was the first time I tried this is like oh no I'm a liar because we did this on Paramount now that I'm thinking about it but like one of the things that we tried that that was super interesting was like she would do like a hand-drawn sketch of a screen you know I had a screen working but it was like obviously like really garbage mm-hmm design using wise. Terrible. And so she'd be like, well, I think it should be like this. And she'd hand draw something on her iPad. And she's really good at sketching. She's really good at sketching. And she's really good at building an intuitive user interface. That's right. So she would sketch this much better, more usable interface for the crap that I had done. And then I just take an image of it. And I in the cursor, I would like Say like here's the image. Can you make the screen look like this?
+
+40:31 - Doug
+You would attach it to the chat window? Yeah, and say here's this. Here's the code.
+
+40:36 - Chris
+Here's this image make this look like this make the screen look like this, please and I get one shot at it, I think With a 1n CSS and it was You know very much close enough, you know, there's some small maybe, but it was like amazingly close.
+
+40:56 - Doug
+I probably want to talk to Katie about this directly, but do you remember like what her impressions were of this?
+
+41:03 - Chris
+Yeah, she was pretty blown away. I think along, yeah, using, using Cursor and Tail 1 together, I remember she was, because I didn't know how that would go, and she was reporting really positive results.
+
+41:16 - Doug
+That was, that was like a big milestone for us because we come, we do these discovery sessions and design sprints and we produce these artifacts out of the design sprints. But the goal was to like take it a step further and use the same discovery design process to produce working software. And her being able to use her skill set of synthesizing, designing, and sketching and handing that to Cursor and have it do the markup is Yeah, markup and a lot of CSS, but yeah.
+
+41:52 - Chris
+So yeah, you should definitely have a conversation with her and get her detailed side of it.
+
+41:58 - Doug
+So what was the end of that story? You had two weeks, a spreadsheet, a bunch of cards, a bunch of cards.
+
+42:07 - Chris
+Um, we were able to get the entire thing plus the scope that he said, Oh, you probably won't get to this. Um, deployed. And working in the fly. And he had like almost no notes. Notes meaning feedback where this isn't what I wanted.
+
+42:26 - Doug
+Yeah. Yeah.
+
+42:27 - Chris
+And there's definitely some like we as we implemented the thing I remember one of the things was like because we were shipping things so fast. One of the struggles was like getting enough of his time to go Is this right or not because we had so much to show him so quickly That like I remember at one point going like oh man Dustin can't get me on his calendar till tomorrow. I really need this answer Today because two weeks is a short time frame, you know, yeah and so one of the things that was really interesting to me about this process is like, and this probably isn't a surprise, we've seen this before, we're moving the bottleneck. The bottleneck is not like how fast can we build working software, it's how fast can we get the interaction from the rest of the business to see if it's right or not.
+
+43:31 - Doug
+This reminds me of extreme programming. One of the tenants of XP is on-site customer.
+
+43:37 - Doug
+That's right.
+
+43:38 - Doug
+And we're going back to the basics and saying, these things matter more because of AI programming.
+
+43:46 - Unidentified Speaker
+Yeah.
+
+43:47 - Chris
+Programming is a force multiplier. And unless you're applying the force correctly, you're going to break stuff, man.
+
+43:55 - Doug
+You're totally going to break everything. Oh, that's really insightful.
+
+44:00 - Chris
+Yeah. Yeah. And that's the third instance of that where we've gone like, oh, Turns out good practices in software development matter more now. They matter more now. Test-driven development, big deal, matters even more. On-site customer matters even more. I don't know what are all of the other things.
+
+44:20 - Doug
+I think documentation matters more. When I'm vibe coding, the last thing I do is I tell, I ask Cursor to say, what documentation do we need for this code that we just wrote? To document and I review it and refine it and then I commit that document with my code and that serves as a foundation for the next time we work together.
+
+44:44 - Chris
+Yeah I don't know man I haven't done that as much so in my mind the jury's still out on like yeah the thing that I worry about is like cursor being about as good as the average human developer about like a reading and paying attention to documentation which is not very good.
+
+45:00 - Doug
+Yeah but I have to tell it to go look at it like usually when I start a new session I say okay go look at these documents yeah and and this is the context that I'm trying to work in yeah and maybe it's just you know a long-term memory yeah maybe I haven't done that as much I guess okay so we did the A&P project and if I remember correctly you actually like to finish it a couple days early a two-week engagement you did everything that he wanted everything that he said it wouldn't be nice to have that I don't think you're gonna get to and you finished a couple days early I think might be right yeah the follow-on was and I'll talk to Tim about this was basically pair programming with Tim and Dustin where it was Dustin set aside three half days and they did three like four hour sessions for the two of them to like sit down and just like live code things together oh yeah yeah and that was on a different project is on a different thing yeah but it was it was an example of like let's intensify the customer developer engagement to try to turn things around faster which is like a learning from your years okay so you did that AMP project that was wildly successful from our perspective yeah and then where did you go what did you do next what was the next project that you did I'm trying to remember whether the note between that and Mike Albert you jumped on Parker Dewey for a little while yeah but I wasn't doing much and maybe I should have but I wasn't doing much cursory I stuff that I remember on that one I think if I'm trying to like I could pull it up and look here like what did your time sheets look like for that time period that was like March and April ish we're And you did PR 360 work. You did Parker Dewey work. You did more Paramount Landscaping work. I'm not sure, I feel like you did something else. Because I feel like you had another experience doing AI development before. You went to Mike Albert. Man. Give me just a second here.
+
+47:45 - Unidentified Speaker
+Okay.
+
+47:47 - Unidentified Speaker
+Okay.
+
+47:51 - Doug
+White sheets, patient reach, Mike Albert. Yeah. Conference prep. Add some PTO in there. White sheets. White sheets. White Sheets. White Sheets, PTL. Okay, let's just jump in with Mike Albert. Sure.
+
+48:35 - Chris
+Mike Albert started, I don't know how Tim started that conversation with them. But it was essentially like they they came to us just to try to understand like how you know wanting to understand like what's worked about how we've applied AI to make software development go faster.
+
+49:12 - Doug
+Yeah I think I think Tim was telling Brian, Brian Bathe, some of Tim's successes. And Tim gets really excited about it and is like, look at all these, look at these things that I've done. And he tells these little stories and it's like, oh, that's crazy. And I think Brian was like, I want to know more about what you're doing that is so wildly successful with AI driven development.
+
+49:40 - Chris
+Yeah. Yeah. And, um, so yeah, we had an initial conversation and basically They have a giant project to replace a ERP system that's using obsolete technology, Oracle Forms specifically, and they're gradually rewriting it over the course of, they have a schedule of many years. There are like three or four hundred of these forms that have to be converted.
+
+50:13 - Doug
+Yeah. Yeah.
+
+50:14 - Chris
+And so, um, they are, um, they're replacing these one by one. They're saying that each one takes about four to six weeks.
+
+50:24 - Chris
+Hand coding testing and you know, it's in deploying and all that.
+
+50:30 - Doug
+Just the process from, yeah, I'm going to start this forum till it gets into their new production environment. And coding it is, four weeks, plus or minus. Times 300 forms is a ridiculous amount of time. Yeah.
+
+50:51 - Chris
+So basically, we started with an experiment to see how, I think what we kind of thought was like, okay, we've seen Cursor take existing, take even just screen shots and produce decent HTML CSS as a result of it? Could we start with something like that? What if we took just screenshots of these Oracle forms and basically used that as a prompt to Cursor to say, how much of the screen can you build, essentially? And could we make the process of converting these screens to their new technology environment, which is not one that we're all, I have a little bit of experience with, but it's not like our usual go-to stack at all.
+
+51:54 - Doug
+Right. Which was interesting. Yeah. You've done.
+
+51:56 - Doug
+I've done.
+
+51:57 - Chris
+So the stack that they've chosen is react on the front end and go microservices on the backend. So. It's a pretty complex environment, not necessarily our chosen tech stack to go really, really fast, right? We'd choose something else if we wanted to get something done as fast as we possibly could. But so yeah, the experiment was like, how can we leverage Cursor to build these screens for them faster? And we just like said, like, let's try, let's see what we can do. Four weeks.
+
+52:37 - Doug
+And so open-ended the statement of work was incredibly vague that just said we're gonna try to figure out how to use AI tooling to make their teams better and here's four weeks.
+
+52:49 - Chris
+Yeah yeah and it's really like yeah to come up with a way so that their team could could we figure out how to do it and you know show their team what we did and then help them go away and let them go faster. Or something like that, right?
+
+53:07 - Doug
+Yeah, so that first four calendar weeks, you had some PTO, the manager that you were working with also had PTO, and did not get a full four weeks worth of work out of those calendar weeks because of reasons. And you were kind of making up, how am I gonna make this work? And so maybe just talk about your thoughts process of how you started this and how you evolved to get to where you are now?
+
+53:41 - Chris
+Yeah, so yeah the first week or so I got together with the manager of the team once. Didn't even get a chance to get together with the rest of the dev team at all, but what he did for me was a repo of all of the Oracle form source code for all these hundreds of forms exported as XML. Of course XML.
+
+54:16 - Doug
+Of course XML.
+
+54:19 - Chris
+With embedded PL SQL source code in the XML. Oh my goodness. In these attributes that you would scroll sideways for It was crazy. It is crazy. It's still there. And so the first thing I did was like, oh man, like this is a nightmare. Hey cursor, could you write me a script to dump out the PL SQL into separate files from this XML? Cause this is garbage. And it did fine. I think it did a first version in bash and then it shows Python for the next. I literally didn't care. At all. I just wanted a script to do it. I have no desire to breed or maintain the source code. It's like totally utility.
+
+55:08 - Doug
+Don't care.
+
+55:09 - Doug
+Throw away code. Throw away utility.
+
+55:12 - Chris
+You didn't test drive that code. No. Yeah. I test drive. Run.
+
+55:17 - Unidentified Speaker
+And it did it.
+
+55:18 - Chris
+Like it did a reasonable job. And so I had the PL SQL and that was like Not that helpful. Cause like I know PL SQL, I used to write PL SQL 20 years ago. Um, so it's not that I don't know that language, but like reading that without the context of the rest of everything and no images of the Oracle form, by the way, no screenshots.
+
+55:45 - Unidentified Speaker
+Yeah.
+
+55:46 - Chris
+I think eventually, yeah, no, that's eventually I did get access to the running Oracle form system. Able to look at screens that way. But that was, that I think took a few days to even get to what I started with was just the XML. And then after I did that script, I said, Hey cursor, here's an Oracle form in this directory. Could you produce an HTML CSS version of this screen? And it did with nothing else. No context, no screenshot, just look at this Oracle form. It looked at the XML, it got enough information about the screen from that XML that it actually produced a surprisingly decent HTML CSS version of the screen. And I did that a couple times.
+
+56:41 - Doug
+And when you saw the HTML that it generated and you finally got access to the form view itself, how close were they?
+
+56:50 - Chris
+Um, honestly, I don't remember whether I, I, I'm trying to remember a specific instance of doing that experiment. Um, in some ways the, the Oracle forms user interface is so poor that the HTML CSS versions were better. They made more sense. They're more intuitive, but it got, um, It got enough done that I was like, oh, no, it can actually understand just from the XML and just from just from what it was able to learn from the XML import, it was able to figure out enough to be useful. That's really what I wanted to know. And that was a clear yes. And then at that point, I started looking at the existing screens that it had. And I'm sorry. So they, they had like several screens implemented already. Okay. Ported that they've done, but they done my hand. And so my next step was like, let's, you know, um, basically go into one of the goats, start going into the source code repos for the front end and back end and saying like, okay, here's a screen that they've done by hand. Here's a screen that we identified that we have an XML export using one of the existing screens as a model can you replace this Oracle form and you know asking it to do things like okay well one of the things that we started with was like they didn't really have a lot very few unit tests very very few automated tests to be honest of either the front end or the back end and I already knew Like that's a key for helping the AI do a better job and go faster. But even with those constraints, we were able to get a screen in like a day or two. We were able to do a working version of one of the screens they identified that they wanted us to target for replacement.
+
+59:09 - Doug
+And was that deployed to production? No.
+
+59:12 - Chris
+No, but it was working in, um, it was working against their real database. So like a deployed environment in the sense, like the backend, because this database is so giant, it's not like you can run the entire Oracle database on your laptop. You have to run it against their deployed QA environment. And we were able to get in a couple of days, I was able to get in a couple of days a working backend microservice and a working frontend in React that actually interacted with their real QA database. What's kept that from going to production? A lot of it is like architecture decisions. So as we've gone along, like, so one of the first things that as we built this process, like one of the things I saw is Cursor did a really good job at like generating the backend microservice and generating the front end. Like it did those two things based on the Oracle screen, but with their existing applications, there was as yet no specification, no contract between the front end and the back end. And essentially it was just like an arbitrary chunk of JSON being passed with no like schema definition about what's in that JSON. So, because it was like an unspecified, non-standard format for the payload between the front end and the back end, I could get Cursor to generate the screens on both sides, but neither of us knew whether it was right except by trial and error. So like, I'd spend a couple hours, whatever, generating the code was really but then we'd spend like two days trying to see trial and error to get it right and figure out like what mistake we'd made in terms of like the payload being wrong on one side or the other you know things like oh we'll a guest camel case for the fields on one side and and whatever you know snake case on the other just stupid stuff and so I realized like the way to actually like if you have 300 screens to do If you can eliminate that guesswork Like that's the biggest cost savings you can get right because all of a sudden like you won't have to guess anymore So that led me to like we need to change the architecture of this system and I introduced open API that's like the go-to standard for if you're doing microservices and even if you're doing REST APIs here to how to specify them. So I basically like did the whole thing again and started with like, hey cursor, before you do anything else, I would like you to generate an open API document to describe the API that you need to implement this Oracle form. And then I grabbed one of the other things that I'd learned from my experiments.
+
+1:02:51 - Doug
+So hang on a second. Version of OpenAPI. Is it really just a specification language? Yeah, that's it. Okay.
+
+1:03:01 - Chris
+It's in YAML or JSON. It's just specifying here are all the endpoints. Here are all the payloads and parameters and all the structure and fields and types of everything. Okay.
+
+1:03:15 - Chris
+That's it.
+
+1:03:16 - Doug
+I'm gonna have to probably get some water. If I'm gonna keep going yeah let's I do want to I mean we're an hour in let's take a little break and get some water yeah is it oh it is stand-up time yeah no my watch says 1136 oh you're right Let me get some water.
+
+1:03:43 - Chris
+Subs by www.zeoranger.co.uk Okay. Okay. Thanks to our sponsors. We're back.
+
+1:05:57 - Doug
+Um, this is your current project and I do want to try to get to, we're close to the end here of trying to get to, um, where, what you've tried. Yeah. I want to focus really on like what have you tried and what works well.
+
+1:06:21 - Unidentified Speaker
+Yeah.
+
+1:06:21 - Chris
+Yeah.
+
+1:06:22 - Doug
+Um, So you generated a form. Yeah. And it worked. Well, yeah.
+
+1:06:29 - Chris
+I generated both a back-end API. I generated a React front-end strictly modeled after what they had right now in production. And what I learned is what they had right now wasn't wasn't really conducive to it was almost like the same thing that we learned earlier like all of the things that we know let us do software development well are more important now more important yeah and it was just another thing that we learned what we learned was like like their design had, their existing design had some issues. And the first one was like, there was no, there was no agreed upon contract between the front end and back end.
+
+1:07:29 - Doug
+And so you went into open API and you're able to essentially just capture what it should be. Yeah.
+
+1:07:36 - Chris
+It's just a specification. Uh, yeah. And the other thing that I was getting to before the break is, um, Another thing that I've learned about leaning on the cursor is if there is a, if there's an old school code generator, that's like, you know, that will do what you want. Like you have two options. Now you can say like live use a perfect example. I think this is where I saw this, you know, I could tell Cursor, like, I want a new screen to create, retrieve, and update, and delete products. And a product has a name and a description, whatever. I could tell it to do that. And it will generate a bunch of code. It will generate maybe a decent migration and a live view. Most of it and it'll be right-ish and then there'll be some mistakes. If I on the command line go mix phx.gen products with the arguments it will 100% predictably do the same thing and be exactly correct.
+
+1:09:00 - Doug
+Yeah I remember that I remember you saying that on the Paramount project was what's the balance between using the generators and using cursor. Another example of that is generating migrations in Rails. It will generate the migration, and the hilarious thing is it generates the file name with what looks reasonable. It tripped me up at first. Oh yeah, it would make up a number for the timestamp. It would just make up a number for the timestamp. And you're like, what is going on? There's an implicit understanding of what has to happen there that it didn't know.
+
+1:09:43 - Chris
+It just says, look at this random number on the beginning of these things. I can make up a random number. I can make up a random number. Yeah. So the lesson there is don't bring a knife to a gunfight. Don't do non-deterministic code generation when determining when you have a deterministic code generation tool at your disposal to do this particular thing. And so I had already learned that lesson. So when I got to OpenAPI, I got to apply it again, because guess what? There are just bazillions of deterministic code generators based on the OpenAPI spec. So there were 17, whatever, umpteen of them to choose from in Go and in React. So the first thing I did was a survey of that landscape, and I used a old school Go code generator to generate all of the stubs for the OpenAPI REST endpoints. And then I told Cursor, okay, based on the logic in this Oracle form, implement this stub. Did you use Cursor to generate the OpenAPI? I used Cursor to generate the OpenAPI specification document. Yes. I used Go OpenAPI CodeGen to generate all of the boilerplate Go code to handle those HTTP requests and responses.
+
+1:11:27 - Unidentified Speaker
+Okay.
+
+1:11:27 - Chris
+Basically, it has a certain structure where it's like okay, and here's a stub for you to actually like Return the data structure. However, you get it I'll take care of bundling it up in the JSON and doing all the HTTP stuff But you got this little function to implement and essentially I told cursor like okay look at the Oracle form logic Figure out what it's doing and fill in this stub and write me some tests and do the things that I needed to do and that works That worked.
+
+1:11:57 - Doug
+Really well?
+
+1:11:58 - Chris
+That worked pretty well. That worked really well. And then I went to the front end and this is where it really got magic. It was already quite good at following one of their react screens and building another front end from an oracle form following their pattern. It was actually excellent at that. But now Before I even did that, I ran the JavaScript OpenAPI code generator to generate the client, to generate the REST client. And then I said, like, I got the REST client. I need you to make a screen based on this Oracle forum and use this REST client. And it just worked. Wow. And implemented the back end a little bit more and then went back in on the front end and click tested it and it worked the first time. The first time. The first time.
+
+1:13:03 - Doug
+This is an interesting... Because there's no guessing.
+
+1:13:06 - Chris
+There is no guessing.
+
+1:13:07 - Chris
+It had a specification and it knew exactly what the fields were because there was a contract.
+
+1:13:13 - Doug
+It's putting up guardrails. Yep. And keeping it from from running away and saying here's the place that I want you to play and giving it pretty clear guidelines and guardrails, and it performs beautifully.
+
+1:13:25 - Chris
+Yeah. If you give it a sandbox where it can't, yeah, a sandbox with enough walls that it can't start flinging the sand over the side.
+
+1:13:36 - Doug
+This is similar to Tim's observations about building a DSL and having, and constraining Cursor to use the DSL to do the work instead of just saying, write me arbitrary code.
+
+1:13:48 - Unidentified Speaker
+Yeah.
+
+1:13:48 - Unidentified Speaker
+Yeah.
+
+1:13:49 - Doug
+Okay, so now you have generated the stub. You have the opening API specification. You generated the Go stubs on the backside. You used cursor to fill in the back-end logic. You used the JavaScript generator to generate the front-end REST client. You used cursor to determine from the Oracle Form XML what goes in the React component. And it works. Is that where you are now?
+
+1:14:21 - Chris
+That's where I am now. And we're taking that version and putting that into production. And from there it's just like understanding their production environment. There's some issues with security in that architecture and how do we do authentication and things there that we're spreading out and implementing and solving right but essentially like Once I figured out the open API the next time I got together with them in person We took another screen and went through it front to back in Four hours or something now you have done some like mob programming with cursor with their team.
+
+1:15:05 - Doug
+Yes. What was that process like,
+
+1:15:07 - Chris
+We I've done it at least three maybe four times the first first time we did it before I tried the OpenAPI experiment. And predictably, I think we got through the backend API and then I had to build a frontend screen, but I was like, and at this point, the next thing I'm going to do is spend about X hours trying to get the frontend and the backend to match up. You guys want to sit here and do that? Would that be fun?" And I was like, I wonder if we should try out OpenAPI. And basically we agreed as a group that the next thing I was going to do is research OpenAPI to see if that would work.
+
+1:15:51 - Doug
+So you did the first form by yourself, you troubleshooted all the interchange problems, and you're like, hey, I got it to work, and let's get together. And showed it to them. And showed it to them, and then live coded another one, and generated the same mess, and said, rather than fix this, let's at OpenAPI and see what that'll do. So you went away and did that and then so what's the next time you did the mob programming?
+
+1:16:15 - Chris
+I think the next time I did the mob programming with OpenAPI and at that point we got the full screen working in the four hours we had or six hours or something like that, a day or less.
+
+1:16:27 - Doug
+So how many people were participating in this?
+
+1:16:30 - Chris
+I think both times it was like three or four.
+
+1:16:33 - Doug
+Three or four and were they Senior people junior people like what was their skill level in terms of like experience with The people that were more activated active participants were I think more more senior level I would say and they were developers.
+
+1:16:54 - Chris
+Yeah, they were very familiar with Oracle forums Yeah, probably I don't know yeah probably There's probably a range of experience with different pieces of the tech stack.
+
+1:17:06 - Doug
+I would say how did you guys like engage in this mob?
+
+1:17:10 - Chris
+You've got a projector Yeah, we have basically had a big monitor, you know big wall sized monitor. You had your computer plugged in.
+
+1:17:18 - Doug
+Yeah, and You were largely driving and they were telling you what to do or how did that work?
+
+1:17:25 - Chris
+It was largely me driving and talking about what I'm doing the first couple times Here in this more recent session, one of their devs was doing most all of the driving. Nice. And prompting cursor and getting stuck and figuring stuff out. And you kind of watching and trying to decide what to do.
+
+1:17:50 - Doug
+Trying to help as best I could.
+
+1:17:54 - Unidentified Speaker
+Yeah.
+
+1:17:54 - Doug
+Yeah. Okay.
+
+1:17:56 - Unidentified Speaker
+Yeah.
+
+1:17:58 - Doug
+Okay, so what the thing that we're talking about doing next is saying now that we have this success of using OpenAPI, the generators on both sides, cursor to fill in the blanks, these Oracle Form XML documents, can we scale this up?
+
+1:18:16 - Chris
+Yeah, now that we have an architecture and a process that we think can actually work to eat the whole elephant, to build the screens fast? How fast can we go? I want to get one of these all the way into production. Find where all the things we don't know yet are. At least one iteration of solving all the problems and then at that point, can we go off to the races? There's 300 of these Oracle forums. They vary wildly in terms of complexity but one of the things we've talked about is like there are some fairly significant number of relatively simple screens could we just start knocking these out you know it seems like very doable to me like it seems almost like a conservative estimate in terms of giving us feel like it gives us plenty of time to say, like, we can do one of these a week, no problem.
+
+1:19:30 - Doug
+Like, that feels very...
+
+1:19:31 - Chris
+One of these forms a week instead of four to six. Instead of four to six. And that's, interestingly, I think that's what we have observed fairly consistently is when you're adopting these practices of leveraging AI effectively on your team, you can probably go four times as fast. Like, I think I'm at the point now where, yeah, I feel like I'm saying the quiet part out loud, but if you're not going twice as fast yet since adopting these, you probably have a really big opportunity to do something better. Like you should be going at least twice as fast unless there's frankly something that I just don't understand yet in the way. Yeah.
+
+1:20:14 - Doug
+I think the thing that we're still trying to figure out and that four times as fast, that feels like my own experience as well.
+
+1:20:24 - Chris
+And interestingly, and I forgot to mention this, when we did the A&P project, we have a pretty solid routine for here's how we estimate projects. And typically, we just count the number of cards. We pick a reasonable guesstimate of how many cards does a team tend doing a week. Yeah. And then we just do math to come up with an estimate.
+
+1:20:52 - Doug
+Yeah.
+
+1:20:53 - Chris
+So that number is typically four or five cards a week.
+
+1:20:56 - Doug
+Four or five cards a week. Yeah. And you do a story mapping session and you typically come up with 25 to 50 cards. Yeah. And you estimate and you do the math.
+
+1:21:07 - Chris
+Yeah. So in two weeks that would be about 10 cards. We ship 40 cards in two weeks. 40 cards. Yeah.
+
+1:21:13 - Doug
+So it was four. Yeah. I feel like sometimes Yeah, I feel like sometimes we see that that number is much higher like it could be approaching ten times as fast Well, but like wind is it? Yeah, what makes it be two times as fast? What makes it be four times as fast and what makes it be ten times as fast?
+
+1:21:35 - Chris
+Here's what I saw on the projects that I've done so far is You need a big enough time block to average out the times when it gives you like 10 or more X and the times when it just makes a complete mess and you need to code it yourself. The 4X is an average.
+
+1:21:59 - Doug
+The 4X is an average between you at your normal pace and the bot at 10X. But in the best case scenario.
+
+1:22:08 - Doug
+But it's also cleaning up when the bot goes wildly.
+
+1:22:12 - Doug
+You need to like embrace the crazy town and go like oh look today cursor is just like Making a mess and everything's terrible and I wish I'd never heard the words AI and this is awful like some days are gonna be like that and Then it's like I think we haven't even talked about this yet trying to figure out when it's time to like tell cursor to move move when is it time to grab the keyboard yeah and it is interesting but it's an average like over the average like yeah you got about 4x because cursor and I don't know if this is true this is conspiracy theory land because cursor is a cloud-based service I want you to use more tokens well not that it wants me to use more tokens but it's like if there are a hundred developers using cursor and cursor has this massive server farm maybe that's why everything goes smoothly and then one day because it's Tuesday there's 10,000 developers using cursor and now their server farm can't handle that load and the response times are slower and they're worse and it's just a bad time it I'm sure It could be like a relationship between how many people are using Cursor at the same time, how complex your code base is, and like what are the context and parameters that you're managing locally that's combined with what everybody else is doing that's combined with we just released a new version of the LLM that still isn't quite tweaked right. Oh yeah. And so it's like there's it is very non-deterministic what you're gonna get out of Cursor. Or on any given day.
+
+1:24:06 - Chris
+Oh yeah, no I've totally seen it slow down and I think I've seen it even like observe that like oh I think I bet you it's like prime time on the west coast right now and so it's under heavy load and it's slowing down and it's generating code slower. That's one thing but I'm also talking about the days where for whatever reason like I'll ask it to do something and you know it's almost like just when I get used to it doing an awesome job, I'll ask it to do something simple and I'll just be like, here's a garbage wad for you. It will spectacularly fail some substantial portion of the time and just got a deal. That's how it is. Alright, here's my last question.
+
+1:24:51 - Doug
+Okay. Based on all of this experience, oh the other thing that you're doing, this may not be my last question, is you're going into fresh Oh, yeah Just talk about what you're doing there afraid. I don't know yet because I'm not there. I understand that but what are you anticipating?
+
+1:25:13 - Chris
+What have we sold them? We have sold them a Workshop where we're going to essentially like mob program with their team for a couple four-hour sessions and Have some amount of like preparation time to get ready to do that.
+
+1:25:31 - Doug
+So you're going to, one, freight's a previous client. Freight's a previous client.
+
+1:25:35 - Doug
+Somewhat familiar with the domain.
+
+1:25:37 - Chris
+You wrote the lion's share of their back end.
+
+1:25:40 - Doug
+Yeah, I led the team that built the first version of what they have.
+
+1:25:45 - Chris
+And that was several years ago.
+
+1:25:47 - Doug
+We don't know all the ways in which it's evolved since then. They've had developers working on it. But you're familiar with the domain. You're familiar with the code base. But you're gonna spend time to understand where they are now.
+
+1:26:02 - Chris
+Yeah, they have identified a thing that they would like to leverage AI to build. I don't know what the thing is, it's a specific feature they have in mind. Okay. I'm gonna get with their lead dev, Elijah, to understand what it is they're wanting to do, get a feel for what the code base is like now. Like you said, You know, it's Elixir and I'm very familiar with the original version of it, certainly. But I don't know how it's changed or what's different now. So I'm gonna get as much information as I can to get ready for that.
+
+1:26:39 - Doug
+So that's like a discovery session. Yeah, yeah. And not, let me just pair with Elijah on the thing. No. It's really a discovery, let's just talk about this kind of thing.
+
+1:26:49 - Chris
+Yeah, yeah. And probably me exploring the code and maybe asking Cursor to explain things to me, who knows.
+
+1:26:55 - Doug
+But getting ready. You get your feet under you, and then you're going to do a mob session where you're going to hold the keyboard, you're going to talk about what you're doing.
+
+1:27:08 - Chris
+Yeah, and maybe I'll let them drive too, I don't know. What I have no idea is like, what's interesting about the Mike Albert project is they clearly have a repeatable problem, where if we can get this really for for one of these we know there's a factor of hundreds that we can multiply by mm-hmm I have no idea what if that situation exists afraid at all and I have no idea like you know I I am still confident that like just by applying LLMs effectively even on existing code base there's some like that's why I go like you know we've observed 4x but I think if we back off and say conservatively I think 2x is a reasonable expectation for like you know leveraging these things on an existing code base we still should be able to go quite a bit faster than we were without them there's a there's a mind shift for me personally I was very skeptical and I've jokingly said this I really hope that AI would just like be a hype train that would blow over and I could retire before I had to deal with it.
+
+1:28:27 - Doug
+And that's obviously not the case. And I was skeptical. I didn't want to use it. But when I saw it being effectively demonstrated, I was like, oh, and then I started doing it. And I was like, I probably am not going to hand code things anymore. Like why would I like this tedium is handled for me and I can tell it what to do. So I think that this workshop, even if what they're doing is not repeatable, you can help their developers, if they have not yet already had it, have that mind shift that says, oh, now I see what you're doing. Now I can go back to my desk and I can use this and do something that is 2X. And I think that's part of what we're trying to experiment with as well. I don't think it's like, it is a, almost a binary thing of somebody, and I've seen this in other organizations when I've talked to them, I haven't actually seen the light bulb turn on, but you talk to them and they're like, oh yeah, our junior developers are out there playing with this and our senior developers are holding at arm's length saying I don't want to do this. And if there's some way to demonstrate to the senior developers the value of what we're doing as another senior developer, it can flip that light switch. Yeah.
+
+1:29:45 - Chris
+No, I know exactly what you're talking about. I wish I'd thought to mention this in my early experiments. I think my early experiments, yeah, there was a period of time where like, yeah, Copilot was the thing and it just wasn't very good yet. But I think there was also a period of time where it probably was good. And I think this was where Mike was right and I was wrong. There's, it probably was good enough to be useful. But I didn't want it to be because absolutely 100% like it still scares the heck out of me, but it scared the heck out of me more than because I believe that like, it's going to be replacing me and it's going to be generating garbage, garbage that works ish. And that's all anybody cares about. And the whole field of programming is going to go down the toilet and what the hell am I going to do with my life.
+
+1:30:42 - Doug
+This existential crisis. Absolutely.
+
+1:30:44 - Chris
+Am I being replaced by AI and to what degree?
+
+1:30:48 - Chris
+And so if I could get it to fail, if I could get it to go like, ah, look, it just did terrible. Yeah. Woohoo. I'm gone with my life. Yes. 100%. And it took me like really, you know, a couple of times, even Tim was like, Hey, you know, we're doing pretty good work over here. It took me two more tries to go like, Oh, okay. And then, yeah, I think it was a real one where it's like, Oh wait, wait, no, actually like writing, it can, it can help you write good code. It can help you. You can help it by giving it to us. Like there's this, yeah, there's some, there's some thing that happened where I realized it was, it was tool that could help me do really good work and not a thing that was going to replace me. That's it. It's a tool that, you know, we're going to be augmented by it. It makes me feel like Superman.
+
+1:31:51 - Doug
+Yeah. Look at what I accomplished this afternoon. I don't think, oh, the AI bot did this thing. I think I did this thing. Yeah. And I think the statement of work from my actually says we're trying to help their developers have that aha moment yeah it's not we want you to convert all these work reforms that's just the mechanism by which you're demonstrating this stuff and we think we could say you know what by the way just give us all this work because we can automate it and let your developers go do other things that are more important it's almost the same thing with freight we're just trying to facilitate that transition to make that transition happen smoother, better for these other organizations that will probably have these transitions anyway, right? There's no way that we're going to get to 2026 and there's not going to be more organizations using these tools.
+
+1:32:51 - Chris
+I think there are, but I also think like, you know, I've gone to conferences where like, people make this point really well it's like we're we're like soaking in this thing like you know we're like the frog in the pot and we we feel this there's some aspect of like the outside there's a huge outside world that doesn't that isn't yet seeing what we're seeing and humans move really slowly I think there's going to be a huge perception of software development that is going to take a long time to adopt this stuff and I think there's going to be opportunity for a long time to like help or get like the AI moves really really fast but humans move really really slow.
+
+1:33:43 - Doug
+That reminds me of the old joke about when the world ends I want to be in Cincinnati because everything happens ten years later there.
+
+1:33:52 - Chris
+Yep.
+
+1:33:52 - Doug
+Okay so that leads me into my actual life question. Okay. And then we'll be done.
+
+1:33:59 - Unidentified Speaker
+Okay.
+
+1:34:00 - Doug
+Given all of this, this context that we've just now rehashed, which has been actually very enjoyable for me, what do you think is like immediately next for us as an organization?
+
+1:34:17 - Chris
+I think there are a couple things that I'm most bullish about, I do feel like there's an opportunity to help organizations apply this stuff to, to augment their developers with AI, to help them make that mindset shift to help them understand that now there's a scenario that I can envision that they're really being replaced. There's just like this opportunity for them all to become superhero developers. Yeah. Um, how do we help more organizations do that, more people do that. I think there's opportunities there that I'm excited about. I also think there's opportunities for more organizations like Paramount that never would have been able to afford custom software development from being able to benefit from custom software development if we can lower the cost by a factor of 10. Of custom software yeah and then I also think there's like a huge amount of legacy systems that you know need to be replaced everybody knows that everybody hates them everybody wants to do it but it's been like insanely cost prohibitive yeah and now it's not the barrier to entry was just like it was a non-starter oh yeah yeah and now it's not yeah yeah so those are I can think of off the top of my head.
+
+1:35:51 - Doug
+Tim has said, and I like this word because he likes to use it so much, bespoke. Yeah. Bespoke ERPs. Yeah. That helping maybe not small people like, small companies, I shouldn't say small people, I'm sorry. Small businesses, like there's a way to build very, very, very focused software for like Paramount. Okay, great. Yeah. But I'm talking more like the AMPs, like the true mid-range, who are on the cusp of needing an ERP, but don't. So instead of investing all the money, I mean, how much money has Mike Albert spent on Oracle over the years?
+
+1:36:30 - Unidentified Speaker
+Oh my gosh.
+
+1:36:31 - Unidentified Speaker
+I mean, they've been doing Oracle for 15, 20 years.
+
+1:36:35 - Unidentified Speaker
+It's got to be hundreds of millions of dollars that they've spent on it.
+
+1:36:41 - Unidentified Speaker
+Hundreds of thousands, I hope it's not Yeah, I'm bad at my orders of magnitude.
+
+1:36:47 - Unidentified Speaker
+I'm just thinking like, what is their licensing fees across 20 years plus all the consultants that they've paid to work on it over the years?
+
+1:36:59 - Unidentified Speaker
+Oh yeah.
+
+1:37:00 - Unidentified Speaker
+Millions.
+
+1:37:01 - Unidentified Speaker
+So is there a way to like build very custom tailored ERP systems or pieces of ERP systems for organizations rather than buying J.D.
+
+1:37:12 - Unidentified Speaker
+buying Oracle Forms, buying Microsoft Dynamics, and customizing the heck out of it.
+
+1:37:19 - Unidentified Speaker
+Yeah.
+
+1:37:20 - Unidentified Speaker
+Yeah.
+
+1:37:20 - Unidentified Speaker
+Yep.
+
+1:37:21 - Unidentified Speaker
+I'm also excited about that space as well.
+
+1:37:25 - Unidentified Speaker
+Okay.
+
+1:37:26 - Unidentified Speaker
+We've been at this conversation for a long time.
+
+1:37:31 - Unidentified Speaker
+An hour and 37 minutes.
+
+1:37:34 - Unidentified Speaker
+I want to give you the last word.
+
+1:37:38 - Unidentified Speaker
+What do you to wrap us up with?
+
+1:37:43 - Unidentified Speaker
+I have no idea.
+
+1:37:45 - Unidentified Speaker
+I'm just going to try to come up with some really long word.
+
+1:37:51 - Unidentified Speaker
+Dermatologist.
+
+1:37:52 - Unidentified Speaker
+All right.
+
+1:37:53 - Unidentified Speaker
+Thank you, Chris.
+
+1:37:55 - Unidentified Speaker
+Thank you for giving me two hours of your time.
+
+1:38:00 - Unidentified Speaker
+Yeah, it was fun.
+
+1:38:02 - Unidentified Speaker
+Definitely looking forward to the transcript also.
+
+1:38:06 - Unidentified Speaker
+I'm going to feed the to an AI tool and say, please generate a slide deck for a talk based on this and see what happens.
+
+1:38:17 - Unidentified Speaker
+I'm 100% going to do that.
+
+1:38:19 - Unidentified Speaker
+Bye.
