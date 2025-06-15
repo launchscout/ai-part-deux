@@ -40,7 +40,8 @@ github.com/superchris
 ---
 
 # Agenda
-- Where are we now?
+- Where are we and how did we get here?
+- What works **today**?
 - What are the challenges?
 - What are the opportunities?
 - Where *might* we be headed?
@@ -67,17 +68,34 @@ github.com/superchris
 ---
 
 # We're in a weird place...
-## You might be seeing this:
-- Junior devs *loving* their AI coding tools
-- Senior devs telling you it's all garbage
+
+---
+# You might be seeing this:
+> it’s like magic ✨ I ask it to redesign a website or to write unit tests, and it just churns through it like it’s nothing. 
+> Things that would’ve taken me lots of time, and more importantly, _energy_, are finished in no time at all. 10x engineer status is within my grasp.
+
+---
+# Or this:
+> Claude deletes my test file instead of adding a new test. 
+> It tries to make a change, realizes it failed, tries again, realizes it failed again. 
+> It edits unrelated files, adding non-sensical comments. It’s suddenly unable to generate code that compiles. 
+> The auto-completes try to delete every line of code I look at, even after I keep dismissing it.
+
+---
+
+# Fun fact:
+## These are from the same person!
+
+---
+
+# You also might be seeing this...
 
 ---
 
 # Junior devs
 - Can make more progress than ever before
 - Less memorization of obscure technical details
-- In some cases, may not know what they don't know
-- May not yet understand the *why* behind best practices
+- Often enthusiastic AI adopters
 
 ---
 
@@ -95,8 +113,13 @@ github.com/superchris
 
 ---
 
-# Rinse and repeat
-## Until late 2024...
+# So why the split?
+
+---
+
+# Junior devs
+- In some cases, may not know what they don't know
+- May not yet understand the *why* behind best practices
 
 ---
 
@@ -109,29 +132,28 @@ github.com/superchris
 
 ---
 
-# None of this is true!
-- Ok, maybe the scary part is
-- AI is not failing
-- Everything that makes us good at software development matters even more now!
+# So what happened to bring me around?
 
 ---
 
-# AI is a force multiplier
-- Everything we do it can help us do faster
-- We can build great software quickly!
-- **OR***
-- We can make a giant mess!
-
----
-
-# Generating code isn't enough
+# The basic problem: Generating code isn't enough
 ## Nobody is perfect!
 - LLMs hallucinate
 - Humans just make mistakes :)
 
 ---
 
-# How do **we** get better at writing code?
+# This leaves us with two options
+- Looks like it works: Ship it! (Vibe coding)
+  - starts off ok
+  - things go off the rails pretty quick
+- Carefully review everything
+  - And hope you don't miss anything!
+  - Blech!
+
+---
+
+# How do humans get better at writing code?
 
 ---
 
@@ -143,35 +165,25 @@ github.com/superchris
 ---
 
 # TDD: Test Driven Development
+- Writing code that tests our code
+  - Gives a simple pass/fail result
+  - Unit tests test portions of an app
+  - End to end tests test the whole thing
+  - We need both
 - <span style="color: #e74c3c;">**Red**</span>, <span style="color: #27ae60;">**Green**</span>, <span style="color: #6042BC;">**Refactor**</span>
   - Start with a <span style="color: #e74c3c;">**failing test**</span>
   - <span style="color: #27ae60;">**Make it pass**</span>
   - <span style="color: #6042BC;">**Clean up the code**</span>
-- Repeat
 
 ---
 
-# What if the computer could do that?
-
----
-
-# My Skynet moment
+# The Skynet moment
 - 2024 - Cursor adds "Composer mode"
-  - allows it to run commands and see their output
+  - before tools could generate code
+  - now it can run commands and see their output
 - Before it could write tests, **now it can run them**
 - *AND* see the results
 - *AND* react to the results to **fix its' own mistakes**
-
----
-
-# Why does this matter so much?
-
----
-
-# ~~Hallucinations~~ Mistakes are inevitable
-- One of us has to fix them
-- Now my AI tool can do it
-  - or at least help
 - This **dramatically** improved the usefulness of AI tooling
 
 ---
@@ -184,40 +196,88 @@ github.com/superchris
 
 ---
 
-# Human challenges
+# So this got us to "net positive"
+## But there were still some bumps in the road...
+
+---
+
+# Accepting non-determinism
+- It's going to be great some days, and terrible others
+- This makes it hard to decide if it's worth it
+
+---
+
+# Solution: Measure the averages!
+- Try it on a real(istic) project
+- Even 1-2 weeks is enough
+- Accounts for good days and bad days
+- Need to have some idea of initial average velocity
+
+---
+
+# Example: 2 week spreadsheet replacement project
+- Real project with a client
+- Defined time box: 2 weeks, 80 hours
+- Team: 1 developer (Chris) + 0.5 designer (Katie)
+- Results:
+  - Plenty of crazy adventures!
+  - 40 cards completed
+  - Normal velocity: 4-5 cards per week
+  - ***4x improvement***
 
 ---
 
 # Remembering to reach for it
+### It can feel like an interruption to flow
 
 ---
 
-# Explaining things well
+# Stuff to try
+- Pair (or mob) with someone
+  - See some wins
+- Try it on things you hate doing :)
 
 ---
 
 # Keeping your brain engaged
+- It can write code faster than you can read it
+- This is the one I struggle with the most
+- More of an issue with languages I use less
+
+---
+
+# What helped:
+- Tests are a great line of defense
+  - chances of hallucinating both the test and code in offsetting ways are smaller
+- Ask the AI to explain things you don't understand
+  - LLMs are often better at explaining code than writing it
+- Be critical!
+  - It will often write code that is "suboptimal"
+  - Tell it to do better!
 
 ---
 
 # Giving up too quickly
+## It will often fail before it succeeds
+
+---
+
+# Things to try
+- Tests often can give it the feedback it needs to get it right
+- Saying it again a different way
+- Breaking the problem down smaller
 
 ---
 
 # Giving up too slowly
+## Learning when it's time to take the wheel
+- Failing three times is a good rule of thumb
+- You might see patters in what it fails at
 
 ---
 
-# Breaking things down
-
----
-
-# Machine challenges
-## How to guess less
-
----
-
-# If it's confusing you, its' confusing the LLM...
+# LLM tarpits
+## If it's confusing you, its' confusing the LLM...
 - Some parts of any tech stack are just not intuitive
 - Some tech stacks are more intuitive than others
 - Documentation can help
@@ -225,33 +285,135 @@ github.com/superchris
 
 ---
 
-# Can we specify that?
+# Example: Nested association froms in LiveView
+- They work well, but aren't intuitive
+- LLMs would make a mess of them *predictably*
+- Solution: do one myself, use it as an example
+
+---
+
+# Things that worked for us
+
+---
+
+# If you specify, you don't have to guess...
+
+---
+
+# Getting specific
 - OpenAPI spec
 - Typed interfaces
-- UI DSLs
+- UI DSLs or Component Library
 - AI can help generate all of these
+
+---
+# Example: adding OpenAPI to a Microservices project
+## Before
+- AI made decent guesses from existing example
+- But guessed differently for front and back end
+## After
+- AI generated an OpenAPI spec
+- code generators generate typed stubs
+- AI fills in the blanks
+- **much higher successs rate**
 
 ---
 
 # Don't sleep on old skool code generators!
-## An approach that worked for us:
-- LLM can generate a spec
+- Yes, LLMs can generate code
+**BUT**
 - Code generators can generate code
   - ***The same way every time***
-- LLM can fill in the blanks
+- And LLMs can run code generators
 
 ---
 
-# Techniques
+# A picture is worth 1000 ~~words~~ tokens
+- AI is astonishly good implementing a UI from mocks
+- Seems to work regardless of specific tech
+  - HTML/CSS, React, Rails, Elixir/Phoenix
+- Could be a Figma mock, or a picture of a napkin
+- Pretty good at fixing what it doesn't get quite right
 
 ---
 
-# Document everything
-- 
+## Don't bring a ~~knife~~ non-deterministic code generator to a ~~gun fight~~ problem easily solvable with deterministic code
+- If it's scriptable, ask it to write a script
+  - Converting between file formats
+  - Search and replace
 
 ---
 
-# Examples are even better
+# Example: Understanding Oracle Form export
+- Oracle Form exports as XML
+  - Embedded code within the XML
+- Ask cursor to explain/convert each file
+- *OR* Ask cursor to write an script to extract metadata and code to separate files
+
+---
+
+# Give it a smaller sandbox to play in
+## So it can make less of a mess :)
+
+---
+
+# DSL example from Tim
+
+---
+
+# Give AI the ability to ask questions
+- Without enough detail, AI makes educated guesses
+- Educated guesses = hallucinations
+- Give it tools to ask for exactly what it needs
+
+---
+
+# Model Context Protocol (MCP)
+- New standard for connecting AI assistants to data sources
+- Gives LLMs the ability to "reach out" to external environment
+- Examples:
+  - Query your database
+  - Read your logs
+  - Access your APIs and documentation
+
+---
+
+# How to MCP
+- Make sure your code assistant supports it
+- Make sure your other tools support it
+  - They likely do or plan to already
+  - Building custom MCP tools is pretty easy
+
+---
+
+# Example: Oracle forms conversion
+- It could figure out a lot from source
+- But not table schemas
+- So it would make them up
+- We added an "execute_query" tool
+  - No more guessing!
+
+---
+
+# Adding documentation
+- AI can read and follow docs
+  - not perfectly but enough that it's worth doing
+  - good for environment specific or less common things
+- AI can also help write docs
+  - but you should carefully review what it comes up with
+- Process docs are also helpful
+  - but again, it won't follow them perfectly
+
+---
+
+# Example: Describing TDD
+- Added a cursor rule
+- Pretty good success
+- Often needs reminding to follow it
+
+---
+
+# How we help teams make the leap
 
 ---
 
@@ -278,6 +440,27 @@ github.com/superchris
 
 ---
 
+# Thoughts and predictions
+
+---
+
+# Language matters
+- LLMs do better with intuitive languages
+  - Ruby, Elixir
+- Can struggle with "difficult" languages
+  - Rust
+  - but getting better
+
+---
+
+# Languages and Tech stacks embracing LLMs
+- TideWave
+  - MCP server integrated with Rails and Phoenix
+- LLM friendly usage rules
+- Generating prompts
+
+---
+
 # Tools matter
 - We've seen best results with Cursor
   - We hear good things about Aider and Zed
@@ -297,68 +480,6 @@ github.com/superchris
 
 ---
 
-# "Old school" deterministic code generators
-- scaffolding
-- generate from a spec (eg OpenAPI)
-
----
-
-# Techniques
-
----
-
-# TDD
-
----
-
-# More context
-
----
-
-# Don't make it write all the code
-
----
-
-# Less guessing
-
----
-
-# Give AI the ability to ask questions
-- Without enough detail, AI makes educated guesses
-- Educated guesses = hallucinations
-- Give it tools to ask for exactly what it needs:
-  - "What's the database schema?"
-  - "How does this API work?"
-  - "What are the business rules?"
-- Result: AI stops guessing and starts knowing
-
----
-
-# Model Context Protocol (MCP)
-- New standard for connecting AI assistants to data sources
-- AI can call functions to get real-time information
-- Examples:
-  - Query your database directly
-  - Read your codebase
-  - Access your APIs and documentation
-- No more copy/pasting context into chat windows!
-
----
-
-# Documentation helps... to a point
-
----
-
-# The human experience
-
-
----
-
-# A lot of us have been asking the wrong question
-## Can it augment us?
-
----
-
 # Projects that benefit the most
 - Legacy rewrites
 - Anything with repeated similar things
@@ -367,14 +488,6 @@ github.com/superchris
 
 # Revisiting Buy vs Build
 
----
-
-# Am I there yet?
-## What to expect
-
----
-
-# 
 ---
 
 # Questions
