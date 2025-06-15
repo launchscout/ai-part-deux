@@ -2310,6 +2310,11 @@ section #title-slide-logo {
 }
 ;">
 <h1 id="example-nested-association-froms-in-liveview">Example: Nested association froms in LiveView</h1>
+<ul>
+<li>They work well, but aren't intuitive</li>
+<li>LLMs would make a mess of them <em>predictably</em></li>
+<li>Solution: do one myself, use it as an example</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-style="
 section h1 {
@@ -2996,14 +3001,7 @@ section #title-slide-logo {
 <ul>
 <li>Without enough detail, AI makes educated guesses</li>
 <li>Educated guesses = hallucinations</li>
-<li>Give it tools to ask for exactly what it needs:
-<ul>
-<li>&quot;What's the database schema?&quot;</li>
-<li>&quot;How does this API work?&quot;</li>
-<li>&quot;What are the business rules?&quot;</li>
-</ul>
-</li>
-<li>Result: AI stops guessing and starts knowing</li>
+<li>Give it tools to ask for exactly what it needs</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-style="
@@ -3064,18 +3062,83 @@ section #title-slide-logo {
 <h1 id="model-context-protocol-mcp">Model Context Protocol (MCP)</h1>
 <ul>
 <li>New standard for connecting AI assistants to data sources</li>
-<li>AI can call functions to get real-time information</li>
+<li>Gives LLMs the ability to &quot;reach out&quot; to external environment</li>
 <li>Examples:
 <ul>
-<li>Query your database directly</li>
-<li>Read your codebase</li>
+<li>Query your database</li>
+<li>Read your logs</li>
 <li>Access your APIs and documentation</li>
 </ul>
 </li>
-<li>No more copy/pasting context into chat windows!</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-style="
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+" lang="en-US" style="--style:
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+;">
+<h1 id="how-to-mcp">How to MCP</h1>
+<ul>
+<li>Make sure your code assistant supports it</li>
+<li>Make sure your other tools support it
+<ul>
+<li>They likely do or plan to already</li>
+<li>Building custom MCP tools is pretty easy</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-style="
 section h1 {
   color: #6042BC;
 }
@@ -3138,72 +3201,6 @@ section #title-slide-logo {
 <li>We added an &quot;execute_query&quot; tool
 <ul>
 <li>No more guessing!</li>
-</ul>
-</li>
-</ul>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-style="
-section h1 {
-  color: #6042BC;
-}
-
-section code {
-  background-color: #e0e0ff;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-}
-
-footer img {
-  position: absolute;
-  width: 120px;
-  right: 20px;
-  top: 0;
-
-}
-section #title-slide-logo {
-  margin-left: -60px;
-}
-" lang="en-US" style="--style:
-section h1 {
-  color: #6042BC;
-}
-
-section code {
-  background-color: #e0e0ff;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-}
-
-footer img {
-  position: absolute;
-  width: 120px;
-  right: 20px;
-  top: 0;
-
-}
-section #title-slide-logo {
-  margin-left: -60px;
-}
-;">
-<h1 id="leveraging-mcp">Leveraging MCP</h1>
-<ul>
-<li>Make sure your code assistant supports it</li>
-<li>Make sure your other tools support it
-<ul>
-<li>They likely do or plan to already</li>
-<li>Building custom MCP tools is pretty easy</li>
 </ul>
 </li>
 </ul>
@@ -3705,6 +3702,142 @@ section #title-slide-logo {
   margin-left: -60px;
 }
 ;">
+<h1 id="language-matters">Language matters</h1>
+<ul>
+<li>LLMs do better with intuitive languages
+<ul>
+<li>Ruby, Elixir</li>
+</ul>
+</li>
+<li>Can struggle with &quot;difficult&quot; languages
+<ul>
+<li>Rust</li>
+<li>but getting better</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-style="
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+" lang="en-US" style="--style:
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+;">
+<h1 id="languages-and-tech-stacks-embracing-llms">Languages and Tech stacks embracing LLMs</h1>
+<ul>
+<li>TideWave
+<ul>
+<li>MCP server integrated with Rails and Phoenix</li>
+</ul>
+</li>
+<li>LLM friendly usage rules</li>
+<li>Generating prompts</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-style="
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+" lang="en-US" style="--style:
+section h1 {
+  color: #6042BC;
+}
+
+section code {
+  background-color: #e0e0ff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+footer img {
+  position: absolute;
+  width: 120px;
+  right: 20px;
+  top: 0;
+
+}
+section #title-slide-logo {
+  margin-left: -60px;
+}
+;">
 <h1 id="tools-matter">Tools matter</h1>
 <ul>
 <li>We've seen best results with Cursor
@@ -3722,7 +3855,7 @@ section #title-slide-logo {
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-style="
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-style="
 section h1 {
   color: #6042BC;
 }
@@ -3785,7 +3918,7 @@ section #title-slide-logo {
 <li>Aider leaderboard is worth keeping an eye on</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-style="
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-style="
 section h1 {
   color: #6042BC;
 }
@@ -3846,7 +3979,7 @@ section #title-slide-logo {
 <li>Anything with repeated similar things</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-style="
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-style="
 section h1 {
   color: #6042BC;
 }
@@ -3903,7 +4036,7 @@ section #title-slide-logo {
 ;">
 <h1 id="revisiting-buy-vs-build">Revisiting Buy vs Build</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-style="
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-style="
 section h1 {
   color: #6042BC;
 }
