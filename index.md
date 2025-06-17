@@ -31,7 +31,7 @@ style: |
 ---
 
 # Beyond Vibe Coding
-## Helping software dev teams effectively adopt AI
+## Lessons from Helping software dev teams adopt AI
 ### Chris Nelson
 @superchris.launchscout.com (BlueSky)
 github.com/superchris
@@ -188,11 +188,11 @@ github.com/superchris
 
 ---
 
-# We can avoid compounding a mess
+# And now it's safer to clean things up
 - AI has gotten pretty good and generating code that works
 - This isn't always *good* code
 - It *is* often able to improve it's own code
-- **And now it can do so safely**
+- And with tests, we can do it without breaking things
 
 ---
 
@@ -272,7 +272,7 @@ github.com/superchris
 # Giving up too slowly
 ## Learning when it's time to take the wheel
 - Failing three times is a good rule of thumb
-- You might see patters in what it fails at
+- You might see patterns in what it fails at
 
 ---
 
@@ -292,7 +292,26 @@ github.com/superchris
 
 ---
 
-# Things that worked for us
+# Moving the bottleneck
+- You can deliver features faster, yay!
+- But they still need to be:
+  - Accepted
+  - Deployed
+  - Documented
+  - Marketed
+- **You likely need to plan for more Product Owner availability**
+
+---
+
+# Example: 2 week experiment
+- The CEO was the "product owner"
+- He only had so much time to give us
+  - Sometimes we had to guess
+  - We kinda got away with it ;)
+
+---
+
+# Things we've learned..
 
 ---
 
