@@ -293,6 +293,7 @@ https://launchscout.com/chris-nelson
 - Some tech stacks are more intuitive than others
 - Documentation can help
 - Examples are even better
+- **Simplifying your code will pay off even more now**
 
 ---
 
@@ -531,10 +532,39 @@ https://launchscout.com/chris-nelson
 
 ---
 
+# Languages and Tech stacks becoming more LLM friendly
+- TideWave
+  - MCP server integrated with Rails and Phoenix
+- LLM friendly usage rules
+- Generating prompts
+
+---
+
+# Tools will keep changing
+- We've seen best results with Cursor
+  - We hear good things about Aider and Zed
+  - This is a *very* dynamic space
+- Minimal requirements
+  - Model choice
+  - Edit code
+  - Run commands (Agents)
+  - MCP support
+
+---
+
+# Models will keep leapfroggin'
+- Claude has been a consistent winner
+- Gemini seems close behind
+- Self-hostable models show increasing promise
+- Aider leaderboard is worth keeping an eye on
+
+
+---
+
 # Closing thoughts
 - For developers
   - This is just another tool
-  - ~~Best Pratices~~ Things that actually work matter more, not less
+  - ~~Best Practices~~ Things that actually work matter more, not less
 - For everybody
   - We are **all** still figuring this out
   - Don't worry about being behind
