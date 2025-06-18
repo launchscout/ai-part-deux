@@ -347,7 +347,7 @@ https://launchscout.com/chris-nelson
 - AI generated an OpenAPI spec
 - code generators generate typed stubs
 - AI fills in the blanks
-- **much higher successs rate**
+- **much higher success rate**
 
 ---
 
@@ -372,7 +372,8 @@ https://launchscout.com/chris-nelson
 
 # Follow the conventions!
 - The LLM will almost always guess conventionally
-- If you deviate, it means you need to tell the LLM *every time*
+- LLMs are like adding a new dev to your team every day :)
+  - you need to tell it about any non-standard things *every time*
   - docs can help here, but only so much
 - Example: REST APIs
 
@@ -400,14 +401,13 @@ https://launchscout.com/chris-nelson
 - Ask cursor to explain/convert each file
 - *OR* Ask cursor to write an script to extract metadata and code to separate files
 
----
-
-# Give it a smaller sandbox to play in
-## So it can make less of a mess :)
 
 ---
 
-# DSL example from Tim
+# Using a DSL: Domain specific languages
+- Example: a set of UI components
+- Prompt LLM to generate screens using only these components
+- Smaller sandbox, less mess
 
 ---
 
@@ -474,7 +474,7 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Step 2: Research
+# Step 2: Research and Experimentation
 - We work with AI to build something
 - Ideally similar to a "repeating problem"
 - We want to find the smooth paths and the rough edges
@@ -482,49 +482,19 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Step 3: Mob it up!
-- Do it again, with an audience
+# Step 3: Team workshop
+- Let's build a thing together!
 - We drive
 - You drive
 - Embrace the chaos!
-  - Blind alleys and rough edges are good
+  - Rabbit holes and rough edges are good!
 
 ---
 
 # Step 4: Keep it up!
+- Continue to check in with the team
 - Tech changes quickly, but humans change slowly
 - Easy to fall back to the way we're used to doing it
-
----
-
-# Opportunities and predictions
-
----
-
-# Languages and Tech stacks embracing LLMs
-- TideWave
-  - MCP server integrated with Rails and Phoenix
-- LLM friendly usage rules
-- Generating prompts
-
----
-
-# Tools will keep changing
-- We've seen best results with Cursor
-  - We hear good things about Aider and Zed
-  - This is a *very* dynamic space
-- Minimal requirements
-  - Edit code
-  - Run commands
-  - MCP support
-
----
-
-# Models will keep leapfroggin'
-- Claude has been a consistent winner
-- Gemini seems close behind
-- Self-hostable models show increasing promise
-- Aider leaderboard is worth keeping an eye on
 
 ---
 
@@ -557,12 +527,17 @@ https://launchscout.com/chris-nelson
 
 ---
 
+# Predictions
+
+---
+
 # Closing thoughts
 - For developers
   - This is just another tool
   - ~~Best Pratices~~ Things that actually work matter more, not less
-- Everybody else
-  - AI is force multiplier, but be careful where you apply forces
+- For everybody
+  - We are **all** still figuring this out
+  - Don't worry about being behind
   - Time to re-evaluate existing assumptions
   - Embrace the chaos?
 
