@@ -31,10 +31,10 @@ style: |
 ---
 
 # Beyond Vibe Coding
-## Lessons from Helping software dev teams adopt AI
+## Lessons from Helping software teams adopt AI
 ### Chris Nelson
 @superchris.launchscout.com (BlueSky)
-github.com/superchris
+https://launchscout.com/chris-nelson
 ![h:200](/images/full-color.png#title-slide-logo)
 
 ---
@@ -44,7 +44,6 @@ github.com/superchris
 - What works **today**?
 - What are the challenges?
 - What are the opportunities?
-- Where *might* we be headed?
 - Questions and discussion
 
 ---
@@ -60,6 +59,17 @@ github.com/superchris
 - Software developers?
 - Managers?
 - Other?
+
+---
+# Glossary time
+- LLM
+  - Large Language Model
+  - Can generate text like a human
+- Agents
+  - Allows LLMs to do stuff, not just generate text
+- DSLs
+  - Domain Specific Lanuages
+  - A tiny programming language you made up
 
 ---
 
@@ -179,6 +189,7 @@ github.com/superchris
 
 # The Skynet moment
 - 2024 - Cursor adds "Composer mode"
+  - agents before anyone used that word
   - before tools could generate code
   - now it can run commands and see their output
 - Before it could write tests, **now it can run them**
@@ -299,7 +310,8 @@ github.com/superchris
   - Deployed
   - Documented
   - Marketed
-- **You likely need to plan for more Product Owner availability**
+- **You likely need to plan for more availability from the "deciders"**
+- XP "On-Site Customer"
 
 ---
 
@@ -325,6 +337,7 @@ github.com/superchris
 - UI DSLs or Component Library
 - AI can help generate all of these
 
+
 ---
 # Example: adding OpenAPI to a Microservices project
 ## Before
@@ -344,6 +357,24 @@ github.com/superchris
 - Code generators can generate code
   - ***The same way every time***
 - And LLMs can run code generators
+
+---
+
+# Make it easier for the LLM to guess better
+
+---
+
+# Choose a guessable language
+- Ruby, Elixir are two of our favorites
+- Python, JS
+
+---
+
+# Follow the conventions!
+- The LLM will almost always guess conventionally
+- If you deviate, it means you need to tell the LLM *every time*
+  - docs can help here, but only so much
+- Example: REST APIs
 
 ---
 
@@ -447,6 +478,7 @@ github.com/superchris
 - We work with AI to build something
 - Ideally similar to a "repeating problem"
 - We want to find the smooth paths and the rough edges
+- What are things that will get in the way?
 
 ---
 
@@ -459,16 +491,13 @@ github.com/superchris
 
 ---
 
-# Thoughts and predictions
+# Step 4: Keep it up!
+- Tech changes quickly, but humans change slowly
+- Easy to fall back to the way we're used to doing it
 
 ---
 
-# Language matters
-- LLMs do better with intuitive languages
-  - Ruby, Elixir
-- Can struggle with "difficult" languages
-  - Rust
-  - but getting better
+# Opportunities and predictions
 
 ---
 
@@ -480,7 +509,7 @@ github.com/superchris
 
 ---
 
-# Tools matter
+# Tools will keep changing
 - We've seen best results with Cursor
   - We hear good things about Aider and Zed
   - This is a *very* dynamic space
@@ -491,7 +520,7 @@ github.com/superchris
 
 ---
 
-# Models matter
+# Models will keep leapfroggin'
 - Claude has been a consistent winner
 - Gemini seems close behind
 - Self-hostable models show increasing promise
@@ -499,13 +528,43 @@ github.com/superchris
 
 ---
 
+# Opportunities
+
+---
+
 # Projects that benefit the most
 - Legacy rewrites
 - Anything with repeated similar things
+- You should be able to go **2x faster**
+  - if not there is likely opportunity
+
+---
+
+# It can help us do better
+- Refactorings we know we should do
+- Practices we know we should adopt
+- Paying off tech debt
+- **We can do all of these faster**
 
 ---
 
 # Revisiting Buy vs Build
+- Since almost forever, it's *always* been cheaper to buy
+- Convestionally wisdom: buy, even it's not a perfect fit
+  - Bloated, expensive ERP
+  - Massively expensive implemenations that fail
+- Are the assumptions that led us here still true?
+
+---
+
+# Closing thoughts
+- For developers
+  - This is just another tool
+  - ~~Best Pratices~~ Things that actually work matter more, not less
+- Everybody else
+  - AI is force multiplier, but be careful where you apply forces
+  - Time to re-evaluate existing assumptions
+  - Embrace the chaos?
 
 ---
 
