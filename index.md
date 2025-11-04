@@ -492,7 +492,7 @@ https://launchscout.com/chris-nelson
   - Using in-editor AI and agents
 - Let's discuss ideas
 - Get ready to Embrace the Chaos!
-- Base repo: https://github.com/launchscout/acm_uc_demo
+- Starting repo: https://github.com/launchscout/acm_uc_demo
   - Elixir/Phoenix
   - Includes a devcontainer
 
@@ -500,6 +500,17 @@ https://launchscout.com/chris-nelson
 
 # Questions
 
-![h:500](/images/qrcode.png)
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <div style="text-align: center;">
+    <h3>Demo repo</h3>
+    <p>github.com/launchscout/acm_uc_demo</p>
+    <img src="/qrcode-github.svg" style="height: 300px;" />
+  </div>
+  <div style="text-align: center;">
+    <h3>These slides</h3>
+    <p>github.com/launchscout/ai-part-deux</p>
+    <img src="/qrcode-slides.svg" style="height: 300px;" />
+  </div>
+</div>
 
 ---
