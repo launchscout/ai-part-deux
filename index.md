@@ -39,6 +39,14 @@ https://launchscout.com/chris-nelson
 
 ---
 
+# About me
+- Co-Founder, Launch Scout
+- Very experienced developer
+- AI skeptic -> AI adopter
+- Recent transition (< 1 year)
+
+---
+
 # Agenda
 - Where are we and how did we get here?
 - What actually works?
@@ -51,13 +59,6 @@ https://launchscout.com/chris-nelson
 # Disclaimer: This talk is already obsolete
 - It's useless to worry that you are behind
 - Because everyone else is too :)
-
----
-
-# About me
-- Very experienced developer
-- AI skeptic -> AI adopter
-- Recent transition (< 1 year)
 
 ---
 
@@ -454,39 +455,6 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Other Predictions
-
----
-
-# Languages and Tech stacks becoming more LLM friendly
-- TideWave
-  - MCP server integrated with Rails and Phoenix
-- LLM friendly usage rules
-- Generating prompts
-
----
-
-# Tools will keep changing
-- We've seen best results with Cursor
-  - We hear good things about Aider and Zed
-  - This is a *very* dynamic space
-- Minimal requirements
-  - Model choice
-  - Edit code
-  - Run commands (Agents)
-  - MCP support
-
----
-
-# Models will keep leapfroggin'
-- Claude has been a consistent winner
-- Gemini seems close behind
-- Self-hostable models show increasing promise
-- Aider leaderboard is worth keeping an eye on
-
-
----
-
 # For next time..
 - We are gonna build project together!
   - Using in-editor AI and agents
@@ -497,8 +465,6 @@ https://launchscout.com/chris-nelson
   - Includes a devcontainer
 
 ---
-
-# Questions
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <div style="text-align: center;">
@@ -512,5 +478,3 @@ https://launchscout.com/chris-nelson
     <img src="/qrcode-slides.svg" style="height: 300px;" />
   </div>
 </div>
-
----
