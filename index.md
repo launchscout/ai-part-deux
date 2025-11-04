@@ -41,10 +41,16 @@ https://launchscout.com/chris-nelson
 
 # Agenda
 - Where are we and how did we get here?
-- What works **today**?
+- What actually works?
 - What are the challenges?
 - What are the opportunities?
 - Questions and discussion
+
+---
+
+# Disclaimer: This talk is already obsolete
+- It's useless to worry that you are behind
+- Because everyone else is too :)
 
 ---
 
@@ -56,20 +62,10 @@ https://launchscout.com/chris-nelson
 ---
 
 # What about you?
-- Software developers?
-- Managers?
-- Other?
-
----
-# Glossary time
-- LLM
-  - Large Language Model
-  - Can generate text like a human
-- Agents
-  - Allows LLMs to do stuff, not just generate text
-- DSLs
-  - Domain Specific Lanuages
-  - A tiny programming language you made up
+- What's your experience with using LLMs to write code?
+- Positive vs negative
+- Size of apps
+- What tools?
 
 ---
 
@@ -98,51 +94,11 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# You also might be seeing this...
-
----
-
-# Junior devs
-- Can make more progress than ever before
-- Less memorization of obscure technical details
-- Often enthusiastic AI adopters
-
----
-
-# But what about senior devs?
-
----
-
-# My own journey
-- I keep hearing about AI coding tools
-- I should try ***insert latest tool here***
-- Wow it just did something amazing!
-- And now it's just generating nonsense
-- And now it's taking me more to time to read nonsense than if I wrote the code myself...
-- *turns the thing off*
-
----
-
-# So why the split?
-
----
-
-# Junior devs
-- In some cases, may not know what they don't know
-- May not yet understand the *why* behind best practices
-
----
-
-# Senior devs: Let's talk about the quiet part out loud
-- We've been rooting for AI to fail
-- It's scary!
-- It looks like everything we love about our career is ending
-  - No one will care about good code
-  - No one will care about good practices
-
----
-
-# So what happened to bring me around?
+# The basic question: Is Vibe Coding dead?
+- Yes!
+  - AI does not replace the need to know how to program computers
+- But now what?
+- Throw everything away and go back?
 
 ---
 
@@ -208,13 +164,15 @@ https://launchscout.com/chris-nelson
 ---
 
 # So this got us to "net positive"
-## But there were still some bumps in the road...
+- But that doesn't mean it's all smooth sailing
+- Let's talk about some challenges
 
 ---
 
 # Accepting non-determinism
 - It's going to be great some days, and terrible others
-- This makes it hard to decide if it's worth it
+- Often success or failure seems not correlated with degree of difficulty
+- This makes it hard to decide if it's any good at all
 
 ---
 
@@ -226,7 +184,7 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Example: 2 week spreadsheet replacement project
+# Case study: 2 week spreadsheet replacement project
 - Real project with a client
 - Defined time box: 2 weeks, 80 hours
 - Team: 1 developer (Chris) + 0.5 designer (Katie)
@@ -252,6 +210,8 @@ https://launchscout.com/chris-nelson
 
 # Keeping your brain engaged
 - It can write code faster than you can read it
+- But you still need to read the code!
+- It's super easy to "skim" the code
 - This is the one I struggle with the most
 - More of an issue with languages I use less
 
@@ -264,24 +224,11 @@ https://launchscout.com/chris-nelson
   - LLMs are often better at explaining code than writing it
 - Be critical!
   - It will often write code that is "suboptimal"
-  - Tell it to do better!
+  - "Please make this code clearer and more concise"
 
 ---
 
-# Giving up too quickly
-## It will often fail before it succeeds
-
----
-
-# Things to try
-- Tests often can give it the feedback it needs to get it right
-- Saying it again a different way
-- Breaking the problem down smaller
-
----
-
-# Giving up too slowly
-## Learning when it's time to take the wheel
+# Learning when it's time to take the wheel
 - Failing three times is a good rule of thumb
 - You might see patterns in what it fails at
 
@@ -292,6 +239,7 @@ https://launchscout.com/chris-nelson
 - Some parts of any tech stack are just not intuitive
 - Some tech stacks are more intuitive than others
 - Documentation can help
+  - Project specific AGENTS.md
 - Examples are even better
 - **Simplifying your code will pay off even more now**
 
@@ -324,31 +272,7 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Things we've learned..
-
----
-
-# If you specify, you don't have to guess...
-
----
-
-# Getting specific
-- OpenAPI spec
-- Typed interfaces
-- UI DSLs or Component Library
-- AI can help generate all of these
-
-
----
-# Example: adding OpenAPI to a Microservices project
-## Before
-- AI made decent guesses from existing example
-- But guessed differently for front and back end
-## After
-- AI generated an OpenAPI spec
-- code generators generate typed stubs
-- AI fills in the blanks
-- **much higher success rate**
+# Tips and observations
 
 ---
 
@@ -361,13 +285,84 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Make it easier for the LLM to guess better
+# Language choice matters
+- Readability matters
+- Paradigms with less context (FP) do better
 
 ---
 
-# Choose a guessable language
-- Ruby, Elixir are two of our favorites
-- Python, JS
+# The data we have seems to back this up...
+![language comparison](/images/exp_acb.png)
+
+---
+
+# Model choice also matters
+- We've consistently seen best results from Claude
+- but you should absolutely decide for yourself!
+
+---
+
+# Models seem to be plateauing
+- Claude 3.5 -> 3.7 was amazing
+- 3.7 -> 4.1 a bit less
+- 4.1 -> 4.5 meh
+- OpenAI reports seem similar
+- **But this is good news**
+  - We can pause and figure how to use this stuff
+
+---
+
+# Platform/framework choice also matters
+- The less code there is, the less mistakes there are
+  - true for humans **and** LLMs
+  - LLMs make mistakes faster
+- Some communities are embracing LLM coding agents
+
+---
+
+# Our favorite stack: Elixir and Phoenix
+- Elixir
+  - Expressive, functional language for the Erlang VM
+- Phoenix
+  - Full-stack Elixir framework inspired by Ruby on Rails
+  - LiveView lets us write SPAs in Elixir
+
+---
+
+# Two approaches to AI coding
+- An editor with AI integration
+  - Github Co-Pilot
+  - Cursor
+  - Claude code (in VSCode)
+- Async agents
+  - Devin
+  - Claude code (in a github action)
+
+---
+
+# In editor
+- Better for fine-grained work
+- You can see what's happening and intervene
+- Can be boring to watch it flail about
+
+---
+
+# Coding agents in the cloud
+- Larger more course grained task
+- Let's you do more in parallel
+- **Make sure they run in your environment**
+  - Many existing AI coding agents do not
+  - Claude code with GH actions does
+
+---
+
+# Tips for both
+- Make sure it writes and runs tests
+  - All of them, every time
+  - But you may need to curb it's enthusiasm
+- Refactor!
+  - Don't accept spaghetti
+  - With tests, it can often improve it's own code
 
 ---
 
@@ -386,22 +381,6 @@ https://launchscout.com/chris-nelson
   - HTML/CSS, React, Rails, Elixir/Phoenix
 - Could be a Figma mock, or a picture of a napkin
 - Pretty good at fixing what it doesn't get quite right
-
----
-
-## Don't bring a ~~knife~~ non-deterministic code generator to a ~~gun fight~~ problem easily solvable with deterministic code
-- If it's scriptable, ask it to write a script
-  - Converting between file formats
-  - Search and replace
-
----
-
-# Example: Understanding Oracle Form export
-- Oracle Form exports as XML
-  - Embedded code within the XML
-- Ask cursor to explain/convert each file
-- *OR* Ask cursor to write an script to extract metadata and code to separate files
-
 
 ---
 
@@ -437,98 +416,45 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Example: Oracle forms conversion
-- It could figure out a lot from source
-- But not table schemas
-- So it would make them up
-- We added an "execute_query" tool
-  - No more guessing!
+# LLM specific docs
+- Some communities are adding this
+  - Elixir libs ship with an agents.md
+  - mix tasks can consolidate them for dependencies
+- Claude skills are similar
 
 ---
 
-# Adding documentation
-- AI can read and follow docs
-  - not perfectly but enough that it's worth doing
-  - good for environment specific or less common things
-- AI can also help write docs
-  - but you should carefully review what it comes up with
-- Process docs are also helpful
-  - but again, it won't follow them perfectly
+# What's all this mean for us?
 
 ---
 
-# Example: Describing TDD
-- Added a cursor rule
-- Pretty good success
-- Often needs reminding to follow it
+# The era of giant software teams may be over
+- This is a *good* thing
+- Software has inverse economies of scale
+- Small teams have always been faster
+  - Now they can do waaaay more
 
 ---
 
-# How we help teams make the leap
-
----
-
-# Step 1: Initial discovery
-- What are you trying to do?
-- Are there similar things that repeat?
-- Where can we eliminate guessing?
-
----
-
-# Step 2: Research and Experimentation
-- We work with AI to build something
-- Ideally similar to a "repeating problem"
-- We want to find the smooth paths and the rough edges
-- What are things that will get in the way?
-
----
-
-# Step 3: Team workshop
-- Let's build a thing together!
-- We drive
-- You drive
-- Embrace the chaos!
-  - Rabbit holes and rough edges are good!
-
----
-
-# Step 4: Keep it up!
-- Continue to check in with the team
-- Tech changes quickly, but humans change slowly
-- Easy to fall back to the way we're used to doing it
-
----
-
-# Opportunities
-
----
-
-# Projects that benefit the most
-- Legacy rewrites
-- Anything with repeated similar things
-- You should be able to go **2x faster**
-  - if not there is likely opportunity
-
----
-
-# It can help us do better
-- Refactorings we know we should do
-- Practices we know we should adopt
-- Paying off tech debt
-- **We can do all of these faster**
-
----
-
-# Revisiting Buy vs Build
+# It's time to revisit Buy vs Build
 - Since almost forever, it's *always* been cheaper to buy
 - Convestionally wisdom: buy, even it's not a perfect fit
   - Bloated, expensive ERP
   - Massively expensive implemenations that fail
-- Are the assumptions that led us here still true?
+- Building custom exact fit software is much more doable
+- This could lead to *massive* growth in software development
 
 ---
 
-# Predictions
+# The job market is terrible for less experienced devs
+- This *must* be temporary
+  - Or our industry will not survive
+- We are actively working to restart our apprenticeship program
+- Hopefully others will follow suit
+
+---
+
+# Other Predictions
 
 ---
 
@@ -561,19 +487,19 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Closing thoughts
-- For developers
-  - This is just another tool
-  - ~~Best Practices~~ Things that actually work matter more, not less
-- For everybody
-  - We are **all** still figuring this out
-  - Don't worry about being behind
-  - Time to re-evaluate existing assumptions
-  - Embrace the chaos?
+# For next time..
+- We are gonna build project together!
+  - Using in-editor AI and agents
+- Let's discuss ideas
+- Get ready to Embrace the Chaos!
+- Base repo: https://github.com/launchscout/acm_uc_demo
+  - Elixir/Phoenix
+  - Includes a devcontainer
 
 ---
 
 # Questions
 
 ![h:500](/images/qrcode.png)
+
 ---
