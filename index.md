@@ -92,18 +92,17 @@ https://launchscout.com/chris-nelson
 
 # Fun fact:
 ## These are from the same person!
-
+### Non-determinism is weird :)
 ---
 
-# The basic question: Is Vibe Coding dead?
-- Yes!
-  - AI does not replace the need to know how to program computers
+# The important question: Are we obsolete?
+- No!
+- AI does not replace the need to know how to program computers
 - But now what?
-- Throw everything away and go back?
 
 ---
 
-# The basic problem: Generating code isn't enough
+# The basic problem we need to solve: Generating code isn't enough
 ## Nobody is perfect!
 - LLMs hallucinate
 - Humans just make mistakes :)
@@ -161,6 +160,15 @@ https://launchscout.com/chris-nelson
 - This isn't always *good* code
 - It *is* often able to improve it's own code
 - And with tests, we can do it without breaking things
+
+---
+
+# Ask it to make the code readable
+- Code should clearly communicate it's intent
+- If you don't understand it, it (eventually) won't either
+- Ask it to make the code clearer and more concise
+- More than once if needed
+- **But keep those tests passing**
 
 ---
 
@@ -223,6 +231,8 @@ https://launchscout.com/chris-nelson
   - chances of hallucinating both the test and code in offsetting ways are smaller
 - Ask the AI to explain things you don't understand
   - LLMs are often better at explaining code than writing it
+  - And pretty good at writing documentation
+    - **but not perfect**
 - Be critical!
   - It will often write code that is "suboptimal"
   - "Please make this code clearer and more concise"
@@ -240,8 +250,9 @@ https://launchscout.com/chris-nelson
 - Some parts of any tech stack are just not intuitive
 - Some tech stacks are more intuitive than others
 - Documentation can help
-  - Project specific AGENTS.md
-- Examples are even better
+  - Claude skills if you are using Claude
+  - Agents.md if not
+- Examples are great!
 - **Simplifying your code will pay off even more now**
 
 ---
@@ -304,6 +315,7 @@ https://launchscout.com/chris-nelson
 ---
 
 # Models seem to be plateauing
+### Altho Opus 4.5 is pretty impressive
 - Claude 3.5 -> 3.7 was amazing
 - 3.7 -> 4.1 a bit less
 - 4.1 -> 4.5 meh
@@ -321,15 +333,6 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# Our favorite stack: Elixir and Phoenix
-- Elixir
-  - Expressive, functional language for the Erlang VM
-- Phoenix
-  - Full-stack Elixir framework inspired by Ruby on Rails
-  - LiveView lets us write SPAs in Elixir
-
----
-
 # Two approaches to AI coding
 - An editor with AI integration
   - Github Co-Pilot
@@ -338,6 +341,7 @@ https://launchscout.com/chris-nelson
 - Async agents
   - Devin
   - Claude code (in a github action)
+  - Tembo
 
 ---
 
@@ -352,7 +356,7 @@ https://launchscout.com/chris-nelson
 - Larger more course grained task
 - Let's you do more in parallel
 - **Make sure they run in your environment**
-  - Many existing AI coding agents do not
+  - Some existing AI coding agents do not
   - Claude code with GH actions does
 
 ---
@@ -455,26 +459,4 @@ https://launchscout.com/chris-nelson
 
 ---
 
-# For next time..
-- We are gonna build project together!
-  - Using in-editor AI and agents
-- Let's discuss ideas
-- Get ready to Embrace the Chaos!
-- Starting repo: https://github.com/launchscout/acm_uc_demo
-  - Elixir/Phoenix
-  - Includes a devcontainer
-
----
-
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  <div style="text-align: center;">
-    <h3>Demo repo</h3>
-    <p>github.com/launchscout/acm_uc_demo</p>
-    <img src="/qrcode-github.svg" style="height: 300px;" />
-  </div>
-  <div style="text-align: center;">
-    <h3>These slides</h3>
-    <p>github.com/launchscout/ai-part-deux</p>
-    <img src="/qrcode-slides.svg" style="height: 300px;" />
-  </div>
-</div>
+# Questions?
